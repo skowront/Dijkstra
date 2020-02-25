@@ -1,0 +1,267 @@
+\begin{theindex}
+
+  \item {addcity}
+    \subitem {Loading.\+cpp}, \hyperpage{17}
+    \subitem {Loading.\+h}, \hyperpage{20}
+  \item {addroad}
+    \subitem {Loading.\+cpp}, \hyperpage{17}
+    \subitem {Loading.\+h}, \hyperpage{20}
+  \item {allexcep}
+    \subitem {Service.\+cpp}, \hyperpage{43}
+    \subitem {Service.\+h}, \hyperpage{47}
+  \item {allroadexist}
+    \subitem {pathfinding.\+cpp}, \hyperpage{26}
+    \subitem {pathfinding.\+h}, \hyperpage{34}
+  \item {allvisited}
+    \subitem {pathfinding.\+cpp}, \hyperpage{26}
+    \subitem {pathfinding.\+h}, \hyperpage{35}
+
+  \indexspace
+
+  \item {charonly}
+    \subitem {Valid.\+cpp}, \hyperpage{51}
+    \subitem {Valid.\+h}, \hyperpage{52}
+  \item {city}
+    \subitem {lcities}, \hyperpage{7}
+  \item {clean}
+    \subitem {Cleanse.\+cpp}, \hyperpage{12}
+    \subitem {Cleanse.\+h}, \hyperpage{14}
+  \item {cleanpath}
+    \subitem {Cleanse.\+cpp}, \hyperpage{12}
+    \subitem {Cleanse.\+h}, \hyperpage{14}
+  \item {cleanroute}
+    \subitem {Cleanse.\+cpp}, \hyperpage{12}
+    \subitem {Cleanse.\+h}, \hyperpage{15}
+  \item {Cleanse.\+cpp}, \hyperpage{11}
+    \subitem {clean}, \hyperpage{12}
+    \subitem {cleanpath}, \hyperpage{12}
+    \subitem {cleanroute}, \hyperpage{12}
+    \subitem {complexclean}, \hyperpage{13}
+  \item {Cleanse.\+h}, \hyperpage{13}
+    \subitem {clean}, \hyperpage{14}
+    \subitem {cleanpath}, \hyperpage{14}
+    \subitem {cleanroute}, \hyperpage{15}
+    \subitem {complexclean}, \hyperpage{15}
+  \item {complexclean}
+    \subitem {Cleanse.\+cpp}, \hyperpage{13}
+    \subitem {Cleanse.\+h}, \hyperpage{15}
+  \item {core}
+    \subitem {Service.\+cpp}, \hyperpage{43}
+    \subitem {Service.\+h}, \hyperpage{48}
+  \item {correctdist}
+    \subitem {existindex}, \hyperpage{5}
+  \item {correctparams}
+    \subitem {Service.\+cpp}, \hyperpage{44}
+    \subitem {Service.\+h}, \hyperpage{48}
+
+  \indexspace
+
+  \item {dist}
+    \subitem {lcities\+::ldist}, \hyperpage{9}
+  \item {doparameters}
+    \subitem {Service.\+cpp}, \hyperpage{44}
+    \subitem {Service.\+h}, \hyperpage{49}
+
+  \indexspace
+
+  \item {errorid}
+    \subitem {Mapheader.\+h}, \hyperpage{24}
+  \item {existA}
+    \subitem {existindex}, \hyperpage{5}
+  \item {existB}
+    \subitem {existindex}, \hyperpage{6}
+  \item {existindex}, \hyperpage{5}
+    \subitem {correctdist}, \hyperpage{5}
+    \subitem {existA}, \hyperpage{5}
+    \subitem {existB}, \hyperpage{6}
+    \subitem {locationptrA}, \hyperpage{6}
+    \subitem {locationptrB}, \hyperpage{6}
+  \item {existroad}
+    \subitem {Loading.\+cpp}, \hyperpage{18}
+    \subitem {Loading.\+h}, \hyperpage{21}
+  \item {existroad\+AtoB}
+    \subitem {pathfinding.\+cpp}, \hyperpage{27}
+    \subitem {pathfinding.\+h}, \hyperpage{35}
+  \item {existV}
+    \subitem {pathfinding.\+cpp}, \hyperpage{27}
+    \subitem {pathfinding.\+h}, \hyperpage{36}
+
+  \indexspace
+
+  \item {findiname}
+    \subitem {pathfinding.\+cpp}, \hyperpage{28}
+    \subitem {pathfinding.\+h}, \hyperpage{36}
+  \item {findinpath}
+    \subitem {pathfinding.\+cpp}, \hyperpage{28}
+    \subitem {pathfinding.\+h}, \hyperpage{37}
+  \item {findinvisited}
+    \subitem {pathfinding.\+cpp}, \hyperpage{29}
+    \subitem {pathfinding.\+h}, \hyperpage{37}
+  \item {findmin}
+    \subitem {pathfinding.\+cpp}, \hyperpage{29}
+    \subitem {pathfinding.\+h}, \hyperpage{38}
+  \item {findshort\+AB}
+    \subitem {pathfinding.\+cpp}, \hyperpage{30}
+    \subitem {pathfinding.\+h}, \hyperpage{39}
+
+  \indexspace
+
+  \item {getweight}
+    \subitem {pathfinding.\+cpp}, \hyperpage{31}
+    \subitem {pathfinding.\+h}, \hyperpage{39}
+
+  \indexspace
+
+  \item {initialize}
+    \subitem {pathfinding.\+cpp}, \hyperpage{31}
+    \subitem {pathfinding.\+h}, \hyperpage{40}
+  \item {interpret}
+    \subitem {pathfinding.\+cpp}, \hyperpage{32}
+    \subitem {pathfinding.\+h}, \hyperpage{40}
+
+  \indexspace
+
+  \item {lcities}, \hyperpage{6}
+    \subitem {city}, \hyperpage{7}
+    \subitem {p\+Next\+City}, \hyperpage{7}
+    \subitem {p\+Next\+Dist}, \hyperpage{7}
+  \item {lcities\+::ldist}, \hyperpage{8}
+    \subitem {dist}, \hyperpage{9}
+    \subitem {p\+Next\+City}, \hyperpage{9}
+    \subitem {p\+Next\+Dist}, \hyperpage{9}
+  \item {ldirect}, \hyperpage{7}
+    \subitem {lv\+Next}, \hyperpage{8}
+    \subitem {vertex}, \hyperpage{8}
+  \item {Loading.\+cpp}, \hyperpage{16}
+    \subitem {addcity}, \hyperpage{17}
+    \subitem {addroad}, \hyperpage{17}
+    \subitem {existroad}, \hyperpage{18}
+    \subitem {loadroad}, \hyperpage{18}
+  \item {Loading.\+h}, \hyperpage{19}
+    \subitem {addcity}, \hyperpage{20}
+    \subitem {addroad}, \hyperpage{20}
+    \subitem {existroad}, \hyperpage{21}
+    \subitem {loadroad}, \hyperpage{21}
+  \item {loadroad}
+    \subitem {Loading.\+cpp}, \hyperpage{18}
+    \subitem {Loading.\+h}, \hyperpage{21}
+  \item {locationptrA}
+    \subitem {existindex}, \hyperpage{6}
+  \item {locationptrB}
+    \subitem {existindex}, \hyperpage{6}
+  \item {lv\+Next}
+    \subitem {ldirect}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main}
+    \subitem {Mapa.\+cpp}, \hyperpage{22}
+  \item {mainexception}
+    \subitem {Service.\+cpp}, \hyperpage{45}
+    \subitem {Service.\+h}, \hyperpage{50}
+  \item {Mapa.\+cpp}, \hyperpage{22}
+    \subitem {main}, \hyperpage{22}
+  \item {Mapheader.\+h}, \hyperpage{23}
+    \subitem {errorid}, \hyperpage{24}
+
+  \indexspace
+
+  \item {nextpathtab}
+    \subitem {pathtab}, \hyperpage{10}
+  \item {noroad}
+    \subitem {Service.\+cpp}, \hyperpage{46}
+    \subitem {Service.\+h}, \hyperpage{50}
+
+  \indexspace
+
+  \item {p\+Next\+City}
+    \subitem {lcities}, \hyperpage{7}
+    \subitem {lcities\+::ldist}, \hyperpage{9}
+  \item {p\+Next\+Dist}
+    \subitem {lcities}, \hyperpage{7}
+    \subitem {lcities\+::ldist}, \hyperpage{9}
+  \item {pathfinding.\+cpp}, \hyperpage{24}
+    \subitem {allroadexist}, \hyperpage{26}
+    \subitem {allvisited}, \hyperpage{26}
+    \subitem {existroad\+AtoB}, \hyperpage{27}
+    \subitem {existV}, \hyperpage{27}
+    \subitem {findiname}, \hyperpage{28}
+    \subitem {findinpath}, \hyperpage{28}
+    \subitem {findinvisited}, \hyperpage{29}
+    \subitem {findmin}, \hyperpage{29}
+    \subitem {findshort\+AB}, \hyperpage{30}
+    \subitem {getweight}, \hyperpage{31}
+    \subitem {initialize}, \hyperpage{31}
+    \subitem {interpret}, \hyperpage{32}
+    \subitem {weightless}, \hyperpage{32}
+    \subitem {writeroute}, \hyperpage{33}
+  \item {pathfinding.\+h}, \hyperpage{33}
+    \subitem {allroadexist}, \hyperpage{34}
+    \subitem {allvisited}, \hyperpage{35}
+    \subitem {existroad\+AtoB}, \hyperpage{35}
+    \subitem {existV}, \hyperpage{36}
+    \subitem {findiname}, \hyperpage{36}
+    \subitem {findinpath}, \hyperpage{37}
+    \subitem {findinvisited}, \hyperpage{37}
+    \subitem {findmin}, \hyperpage{38}
+    \subitem {findshort\+AB}, \hyperpage{39}
+    \subitem {getweight}, \hyperpage{39}
+    \subitem {initialize}, \hyperpage{40}
+    \subitem {interpret}, \hyperpage{40}
+    \subitem {weightless}, \hyperpage{41}
+    \subitem {writeroute}, \hyperpage{41}
+  \item {pathtab}, \hyperpage{9}
+    \subitem {nextpathtab}, \hyperpage{10}
+    \subitem {pvertex}, \hyperpage{10}
+    \subitem {sdist}, \hyperpage{10}
+    \subitem {vertex}, \hyperpage{10}
+    \subitem {visited}, \hyperpage{10}
+  \item {printhelp}
+    \subitem {Service.\+cpp}, \hyperpage{46}
+    \subitem {Service.\+h}, \hyperpage{51}
+  \item {pvertex}
+    \subitem {pathtab}, \hyperpage{10}
+
+  \indexspace
+
+  \item {sdist}
+    \subitem {pathtab}, \hyperpage{10}
+  \item {Service.\+cpp}, \hyperpage{42}
+    \subitem {allexcep}, \hyperpage{43}
+    \subitem {core}, \hyperpage{43}
+    \subitem {correctparams}, \hyperpage{44}
+    \subitem {doparameters}, \hyperpage{44}
+    \subitem {mainexception}, \hyperpage{45}
+    \subitem {noroad}, \hyperpage{46}
+    \subitem {printhelp}, \hyperpage{46}
+  \item {Service.\+h}, \hyperpage{46}
+    \subitem {allexcep}, \hyperpage{47}
+    \subitem {core}, \hyperpage{48}
+    \subitem {correctparams}, \hyperpage{48}
+    \subitem {doparameters}, \hyperpage{49}
+    \subitem {mainexception}, \hyperpage{50}
+    \subitem {noroad}, \hyperpage{50}
+    \subitem {printhelp}, \hyperpage{51}
+
+  \indexspace
+
+  \item {Valid.\+cpp}, \hyperpage{51}
+    \subitem {charonly}, \hyperpage{51}
+  \item {Valid.\+h}, \hyperpage{52}
+    \subitem {charonly}, \hyperpage{52}
+  \item {vertex}
+    \subitem {ldirect}, \hyperpage{8}
+    \subitem {pathtab}, \hyperpage{10}
+  \item {visited}
+    \subitem {pathtab}, \hyperpage{10}
+
+  \indexspace
+
+  \item {weightless}
+    \subitem {pathfinding.\+cpp}, \hyperpage{32}
+    \subitem {pathfinding.\+h}, \hyperpage{41}
+  \item {writeroute}
+    \subitem {pathfinding.\+cpp}, \hyperpage{33}
+    \subitem {pathfinding.\+h}, \hyperpage{41}
+
+\end{theindex}

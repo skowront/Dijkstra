@@ -1,0 +1,54 @@
+\hypertarget{structlcities}{}\section{Dokumentacja struktury lcities}
+\label{structlcities}\index{lcities@{lcities}}
+
+
+Struktura mapy zlozonej z drog jednokierunkowych. lcities to lista list. Struktura reprezentuje miasto. Miasta tworza liste jednokierunkowa. Kazdemu miastu przypisana jest droga lub lista drog wychodzacych do innych miast.  
+
+
+
+
+{\ttfamily \#include $<$Mapheader.\+h$>$}
+
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structlcities_1_1ldist}{ldist}}
+\begin{DoxyCompactList}\small\item\em Struktura dystansow w mapie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{structlcities_ab7fec18ea0ddc46480007d8eaf327a0f}{city}}
+\item 
+\mbox{\hyperlink{structlcities}{lcities}} $\ast$ \mbox{\hyperlink{structlcities_a04f15fa0285017666a64233b9aad441d}{p\+Next\+City}} = nullptr
+\item 
+\mbox{\hyperlink{structlcities_1_1ldist}{ldist}} $\ast$ \mbox{\hyperlink{structlcities_a2415f938e641bf7b0075f98132802c9c}{p\+Next\+Dist}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Struktura mapy zlozonej z drog jednokierunkowych. lcities to lista list. Struktura reprezentuje miasto. Miasta tworza liste jednokierunkowa. Kazdemu miastu przypisana jest droga lub lista drog wychodzacych do innych miast. 
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{structlcities_ab7fec18ea0ddc46480007d8eaf327a0f}\label{structlcities_ab7fec18ea0ddc46480007d8eaf327a0f}} 
+\index{lcities@{lcities}!city@{city}}
+\index{city@{city}!lcities@{lcities}}
+\subsubsection{\texorpdfstring{city}{city}}
+{\footnotesize\ttfamily string lcities\+::city}
+
+nazwa miasta \mbox{\Hypertarget{structlcities_a04f15fa0285017666a64233b9aad441d}\label{structlcities_a04f15fa0285017666a64233b9aad441d}} 
+\index{lcities@{lcities}!p\+Next\+City@{p\+Next\+City}}
+\index{p\+Next\+City@{p\+Next\+City}!lcities@{lcities}}
+\subsubsection{\texorpdfstring{p\+Next\+City}{pNextCity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities}{lcities}}$\ast$ lcities\+::p\+Next\+City = nullptr}
+
+wskaznik na nastepne miasto w liscie \mbox{\Hypertarget{structlcities_a2415f938e641bf7b0075f98132802c9c}\label{structlcities_a2415f938e641bf7b0075f98132802c9c}} 
+\index{lcities@{lcities}!p\+Next\+Dist@{p\+Next\+Dist}}
+\index{p\+Next\+Dist@{p\+Next\+Dist}!lcities@{lcities}}
+\subsubsection{\texorpdfstring{p\+Next\+Dist}{pNextDist}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities_1_1ldist}{ldist}}$\ast$ lcities\+::p\+Next\+Dist = nullptr}
+
+wskaznik na pierwsza droge wychodzaca z listy 
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mapheader_8h}{Mapheader.\+h}}\end{DoxyCompactItemize}

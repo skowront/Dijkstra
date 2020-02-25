@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mapa: Plik źródłowy Cleanse.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mapa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4c8cf85762cb1998d0c18f88ec599217.html">projekt-02</a></li><li class="navelem"><a class="el" href="dir_08c86b01266eff09fc34d82bace979b5.html">Mapa</a></li><li class="navelem"><a class="el" href="dir_bb1f29e49c897877093dbdc54e3da301.html">Mapav1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Cleanse.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_cleanse_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef Cleanse_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define Cleanse_H </span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mapheader_8h.html">Mapheader.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cleanse_8h.html#a96321ea503dfbc6d6e0334a26827b1cd">clean</a>(<a class="code" href="structlcities.html">lcities</a> *&amp; pName);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cleanse_8h.html#a9f2cb8120adae944432375eb61963e9f">cleanroute</a>(<a class="code" href="structldirect.html">ldirect</a> *&amp; route);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cleanse_8h.html#ad384ddb2cdc3a29bcb1d701be3a8080c">cleanpath</a>(<a class="code" href="structpathtab.html">pathtab</a> *&amp; path);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_cleanse_8h.html#aaadb044380c546445dd4ec493b47ea91">complexclean</a>(<a class="code" href="structlcities.html">lcities</a> *&amp; pName, <span class="keywordtype">bool</span> pn, <a class="code" href="structpathtab.html">pathtab</a> *&amp;path, <span class="keywordtype">bool</span> pt, <a class="code" href="structldirect.html">ldirect</a> * &amp;route, <span class="keywordtype">bool</span> rt);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="ttc" id="structpathtab_html"><div class="ttname"><a href="structpathtab.html">pathtab</a></div><div class="ttdoc">Struktura do podawania wag odleglosciowych i poprawnego wykonania algorytmu Dijkstry, dalej zwana pathtab. </div><div class="ttdef"><b>Definition:</b> Mapheader.h:87</div></div>
+<div class="ttc" id="_cleanse_8h_html_ad384ddb2cdc3a29bcb1d701be3a8080c"><div class="ttname"><a href="_cleanse_8h.html#ad384ddb2cdc3a29bcb1d701be3a8080c">cleanpath</a></div><div class="ttdeci">void cleanpath(pathtab *&amp;path)</div><div class="ttdoc">Funkcja usuwa liste elementow typu pathtab. </div><div class="ttdef"><b>Definition:</b> Cleanse.cpp:60</div></div>
+<div class="ttc" id="_mapheader_8h_html"><div class="ttname"><a href="_mapheader_8h.html">Mapheader.h</a></div></div>
+<div class="ttc" id="_cleanse_8h_html_aaadb044380c546445dd4ec493b47ea91"><div class="ttname"><a href="_cleanse_8h.html#aaadb044380c546445dd4ec493b47ea91">complexclean</a></div><div class="ttdeci">void complexclean(lcities *&amp;pName, bool pn, pathtab *&amp;path, bool pt, ldirect *&amp;route, bool rt)</div><div class="ttdoc">Wywoluje usuwanie podanych struktur dwokrotnie, po strukturze nalezy podac 1/0 lub true false co decy...</div><div class="ttdef"><b>Definition:</b> Cleanse.cpp:74</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="structldirect_html"><div class="ttname"><a href="structldirect.html">ldirect</a></div><div class="ttdoc">Struktura drogi z A do B. Struktura wskazuje na elementy tablicy pathtab (pathtab), przez ktore nalezy isc aby dotrzec z miasta A do miasta B, a dokladniej z miasta B do miasta A,   poniewaz funkcje poruszaja sie z vertex do pvertex poczynajac od vertex wskazujacy na miasto B. </div><div class="ttdef"><b>Definition:</b> Mapheader.h:105</div></div>
+<div class="ttc" id="_cleanse_8h_html_a9f2cb8120adae944432375eb61963e9f"><div class="ttname"><a href="_cleanse_8h.html#a9f2cb8120adae944432375eb61963e9f">cleanroute</a></div><div class="ttdeci">void cleanroute(ldirect *&amp;route)</div><div class="ttdoc">Funkcja usuwa strukture typu ldirect. </div><div class="ttdef"><b>Definition:</b> Cleanse.cpp:47</div></div>
+<div class="ttc" id="_cleanse_8h_html_a96321ea503dfbc6d6e0334a26827b1cd"><div class="ttname"><a href="_cleanse_8h.html#a96321ea503dfbc6d6e0334a26827b1cd">clean</a></div><div class="ttdeci">void clean(lcities *&amp;pName)</div><div class="ttdoc">Funkcja usuwa liste obiektow typu lcities, z lista podrzedna obiektow ldist wlacznie. </div><div class="ttdef"><b>Definition:</b> Cleanse.cpp:14</div></div>
+<div class="ttc" id="structlcities_html"><div class="ttname"><a href="structlcities.html">lcities</a></div><div class="ttdoc">Struktura mapy zlozonej z drog jednokierunkowych. lcities to lista list. Struktura reprezentuje miast...</div><div class="ttdef"><b>Definition:</b> Mapheader.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

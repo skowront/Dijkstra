@@ -1,0 +1,70 @@
+\hypertarget{structpathtab}{}\section{Dokumentacja struktury pathtab}
+\label{structpathtab}\index{pathtab@{pathtab}}
+
+
+Struktura do podawania wag odleglosciowych i poprawnego wykonania algorytmu Dijkstry, dalej zwana pathtab.  
+
+
+
+
+{\ttfamily \#include $<$Mapheader.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structlcities}{lcities}} $\ast$ \mbox{\hyperlink{structpathtab_a4d32b8ede66958e9599e773e754b5027}{vertex}} = nullptr
+\item 
+double \mbox{\hyperlink{structpathtab_afdbd8fb4a4437e60b836f4623523d640}{sdist}} = 0
+\item 
+\mbox{\hyperlink{structlcities}{lcities}} $\ast$ \mbox{\hyperlink{structpathtab_abccdc514a1353a851fa47bbc9afcdc5e}{pvertex}} = nullptr
+\item 
+bool \mbox{\hyperlink{structpathtab_a2af2d9ba6f3cff245e1f569e72ef43ff}{visited}} = false
+\item 
+\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$ \mbox{\hyperlink{structpathtab_a34941d031d8f7809f84e8c7017ecbcbb}{nextpathtab}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Struktura do podawania wag odleglosciowych i poprawnego wykonania algorytmu Dijkstry, dalej zwana pathtab. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+tablica pathtab jest twrzona dla wszystkich istniejacych wierzcholkow niezaleznie od jakiejkolwiek zmiennej, gdyz nie wiemy ile wierzcholkow (ani ktore) musi znalezc sie na trasie. 
+\end{DoxyWarning}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{structpathtab_a34941d031d8f7809f84e8c7017ecbcbb}\label{structpathtab_a34941d031d8f7809f84e8c7017ecbcbb}} 
+\index{pathtab@{pathtab}!nextpathtab@{nextpathtab}}
+\index{nextpathtab@{nextpathtab}!pathtab@{pathtab}}
+\subsubsection{\texorpdfstring{nextpathtab}{nextpathtab}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpathtab}{pathtab}}$\ast$ pathtab\+::nextpathtab}
+
+Wskaznik na kolejny element listy/tabeli pathtab \mbox{\Hypertarget{structpathtab_abccdc514a1353a851fa47bbc9afcdc5e}\label{structpathtab_abccdc514a1353a851fa47bbc9afcdc5e}} 
+\index{pathtab@{pathtab}!pvertex@{pvertex}}
+\index{pvertex@{pvertex}!pathtab@{pathtab}}
+\subsubsection{\texorpdfstring{pvertex}{pvertex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities}{lcities}}$\ast$ pathtab\+::pvertex = nullptr}
+
+Wskaznik na wiercholek z ktorego przychodzi Dijkstra \mbox{\Hypertarget{structpathtab_afdbd8fb4a4437e60b836f4623523d640}\label{structpathtab_afdbd8fb4a4437e60b836f4623523d640}} 
+\index{pathtab@{pathtab}!sdist@{sdist}}
+\index{sdist@{sdist}!pathtab@{pathtab}}
+\subsubsection{\texorpdfstring{sdist}{sdist}}
+{\footnotesize\ttfamily double pathtab\+::sdist = 0}
+
+Waga, czyli odleglosc do miasta X z miasta A, przez miasta Y,Z... \mbox{\Hypertarget{structpathtab_a4d32b8ede66958e9599e773e754b5027}\label{structpathtab_a4d32b8ede66958e9599e773e754b5027}} 
+\index{pathtab@{pathtab}!vertex@{vertex}}
+\index{vertex@{vertex}!pathtab@{pathtab}}
+\subsubsection{\texorpdfstring{vertex}{vertex}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities}{lcities}}$\ast$ pathtab\+::vertex = nullptr}
+
+Wskaznik na wiercholek \mbox{\Hypertarget{structpathtab_a2af2d9ba6f3cff245e1f569e72ef43ff}\label{structpathtab_a2af2d9ba6f3cff245e1f569e72ef43ff}} 
+\index{pathtab@{pathtab}!visited@{visited}}
+\index{visited@{visited}!pathtab@{pathtab}}
+\subsubsection{\texorpdfstring{visited}{visited}}
+{\footnotesize\ttfamily bool pathtab\+::visited = false}
+
+Czy bylo odwiedzone 
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mapheader_8h}{Mapheader.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,437 @@
+\hypertarget{pathfinding_8cpp}{}\section{Dokumentacja pliku pathfinding.\+cpp}
+\label{pathfinding_8cpp}\index{pathfinding.\+cpp@{pathfinding.\+cpp}}
+
+
+Plik zawiera funkcje kluczowe do wykonania algorytmu Dijkstry i znalezienia o ile istnieje drogi z A do B.  
+
+
+{\ttfamily \#include \char`\"{}Mapheader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Valid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Service.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cleanse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pathfinding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Loading.\+h\char`\"{}}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$ \mbox{\hyperlink{pathfinding_8cpp_aaf58cc999efce529686df35590843cb4}{initialize}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, \mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path)
+\begin{DoxyCompactList}\small\item\em Funkcja inicjalizuje liste (tablice) pathtab na podstawie wierzcholkow struktuy mapy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$ \mbox{\hyperlink{pathfinding_8cpp_ad0f2522769dfcd2ad25c3fc4ff40d7a0}{findinpath}} (\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path, const string \&cityA)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajduje i zwraca wskaznik na element z tablicy pathtab, ktory wskazuje na miasto o zadanej nazwie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structlcities}{lcities}} $\ast$ \mbox{\hyperlink{pathfinding_8cpp_a774a99c936f377872d3bdf11afdefe73}{findiname}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, const string \&cityA)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajduje i zwraca wskaznik na element ze struktury mapy, ktory wskazuje na miasto o zadanej nazwie. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$ \mbox{\hyperlink{pathfinding_8cpp_a47b47a6c5e72861b2282d1c41e8857af}{findmin}} (\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path, const string \&cityA)
+\begin{DoxyCompactList}\small\item\em Funkcja znajduje w tablicy pathtab wskaznik na minimalna wartosc wiercholka, co jest jednym z kloczowych krokow algorytmu Dijksty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{pathfinding_8cpp_a08ebae8688c8c09394a2b5012111b915}{allvisited}} (\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path, const string \&cityA)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza czy jest istniejacy elemeny tablicy pathtab, ktory nie byl nigdy odwiedzony. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structpathtab}{pathtab}} \mbox{\hyperlink{pathfinding_8cpp_a9d7254849f1ab5e9b3fb4c4b9604d857}{findshort\+AB}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, const string \&cityA, const string cityB, \mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path)
+\begin{DoxyCompactList}\small\item\em Funkcja wypelnia tablice pathtab wagami odleglosci punktu B od A. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{pathfinding_8cpp_a7daa50c095f49103e1054ebf15b86f3a}{existV}} (\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&p\+Visited, const string \&city)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy w strukturze ldirect istnieje element wskazujacy na miasto o zadanej nazwie. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{pathfinding_8cpp_adc65dbbb5a3872aa33370ba1e467e6ad}{existroad\+AtoB}} (const string \&cityA, const string \&cityB, \mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy w strukturze mapy wystepuje droga z A do B. Ta funkcja rozni sie od existroad, gdyz sprawdza wylacznie istnienie i nie zwraca gdzie wystapily. ~\newline
+ Stworzone dla funkcji \mbox{\hyperlink{pathfinding_8h_a78196ea5104d95e0a42d7c43f2374443}{allroadexist()}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{pathfinding_8cpp_a78196ea5104d95e0a42d7c43f2374443}{allroadexist}} (\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&p\+Visited, \mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, const string \&startcity)
+\begin{DoxyCompactList}\small\item\em Sprawdza czy drogi miedzy wierzcholkami (vertex), a poprzednimi wierzcholkami (pvertex) w strukturze ldirect istnieja w strukturze mapy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structldirect}{ldirect}} $\ast$ \mbox{\hyperlink{pathfinding_8cpp_a19a1031f4deb5f0dda055350bbdf3f33}{interpret}} (\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path, const string \&cityA, const string \&cityB, \mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcja wypelnia strukture ldirect trasami a punktu A do B na podstawie wartosci vertex i pvertex z tablicy pathtab. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structldirect}{ldirect}} $\ast$ \mbox{\hyperlink{pathfinding_8cpp_a25ca32e0109afa314f7a0159e9a0bd41}{findinvisited}} (\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&p\+Visited, const string \&city)
+\begin{DoxyCompactList}\small\item\em Odnajduje w strukturze ldirect element o zadanej nazwie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pathfinding_8cpp_a1b4dc9179dbf59355efce07448be105d}{writeroute}} (\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&route, ostream \&stream)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisuje do zadanego strumienia droge z A do B. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pathfinding_8cpp_a3a402a1a8e01638b441e89c851620eba}{weightless}} (\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&route, const string \&endcity, const string \&startcity)
+\begin{DoxyCompactList}\small\item\em Funkcja przywroci dystanse z $\vert$\+X-\/\+Y$\vert$ usuwajac odleglosc $\vert$\+A-\/\+X$\vert$, powstale w wyniku algorytmu Dijkstry. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{pathfinding_8cpp_a74ccff7ae4c9aed242437bd09b199716}{getweight}} (\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path, const string \&city)
+\begin{DoxyCompactList}\small\item\em Funkcja zbiera wage nadana przez findshort\+AB do sdist w elemencie wskazujacym na szukana nazwe miasta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Plik zawiera funkcje kluczowe do wykonania algorytmu Dijkstry i znalezienia o ile istnieje drogi z A do B. 
+
+\begin{DoxyAuthor}{Autor}
+Tomasz Skowron 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{pathfinding_8cpp}{pathfinding.\+cpp}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{pathfinding_8cpp_a78196ea5104d95e0a42d7c43f2374443}\label{pathfinding_8cpp_a78196ea5104d95e0a42d7c43f2374443}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!allroadexist@{allroadexist}}
+\index{allroadexist@{allroadexist}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{allroadexist()}{allroadexist()}}
+{\footnotesize\ttfamily bool allroadexist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&}]{p\+Visited,  }\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{const string \&}]{startcity }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy drogi miedzy wierzcholkami (vertex), a poprzednimi wierzcholkami (pvertex) w strukturze ldirect istnieja w strukturze mapy. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Wystarcza jedna nie isniejaca droga by zwrocono false. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Visited} & -\/ wskaznik na strukture trasy \\
+\hline
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+{\em startcity} & -\/ wskaznik na miasto poczatkowe, z ktorego droge szukamy. Pozwala na wczesniejsze przerwanie zakonczenia dzialania funkcji. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true -\/ gdy istnieja wszystkie drogi 
+
+false -\/ gdy nie istnieje conajmniej jedno z miast na trasie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pathfinding_8cpp_a08ebae8688c8c09394a2b5012111b915}\label{pathfinding_8cpp_a08ebae8688c8c09394a2b5012111b915}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!allvisited@{allvisited}}
+\index{allvisited@{allvisited}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{allvisited()}{allvisited()}}
+{\footnotesize\ttfamily bool allvisited (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path,  }\item[{const string \&}]{cityA }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdza czy jest istniejacy elemeny tablicy pathtab, ktory nie byl nigdy odwiedzony. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em path} & -\/ wskaznik na tablice pathtab \\
+\hline
+{\em cityA} & -\/ nazwa miasta do ignorowania (wynika to z algorytmu Dijkstry, gdzie do miasta pczatkowego nie wracamy), a swoja droga w prawie wszystkich przypadkach to miasto jest juz odwiedzone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+element -\/ wskaznik na szukany element mapy 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em noroute} & -\/ gdy nie odnaleziono elementu \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{pathfinding_8cpp_adc65dbbb5a3872aa33370ba1e467e6ad}\label{pathfinding_8cpp_adc65dbbb5a3872aa33370ba1e467e6ad}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!existroad\+AtoB@{existroad\+AtoB}}
+\index{existroad\+AtoB@{existroad\+AtoB}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{existroad\+Ato\+B()}{existroadAtoB()}}
+{\footnotesize\ttfamily bool existroad\+AtoB (\begin{DoxyParamCaption}\item[{const string \&}]{cityA,  }\item[{const string \&}]{cityB,  }\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy w strukturze mapy wystepuje droga z A do B. Ta funkcja rozni sie od existroad, gdyz sprawdza wylacznie istnienie i nie zwraca gdzie wystapily. ~\newline
+ Stworzone dla funkcji \mbox{\hyperlink{pathfinding_8h_a78196ea5104d95e0a42d7c43f2374443}{allroadexist()}}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em cityA} & -\/ nazwa szukanego miasta A \\
+\hline
+{\em cityB} & -\/ nazwa szukanego miasta B \\
+\hline
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true -\/ gdy istnieja oba 
+
+false -\/ gdy nie istnieje conajmniej jedno z miast 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pathfinding_8cpp_a7daa50c095f49103e1054ebf15b86f3a}\label{pathfinding_8cpp_a7daa50c095f49103e1054ebf15b86f3a}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!existV@{existV}}
+\index{existV@{existV}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{exist\+V()}{existV()}}
+{\footnotesize\ttfamily bool existV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&}]{p\+Visited,  }\item[{const string \&}]{city }\end{DoxyParamCaption})}
+
+
+
+Sprawdza czy w strukturze ldirect istnieje element wskazujacy na miasto o zadanej nazwie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Visited} & -\/ wskaznik na strukture ldirect \\
+\hline
+{\em city} & -\/ nazwa szukanego miasta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true -\/ gdy istnieje 
+
+false -\/ gdy nie istnieje 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em earlyhit} & -\/ gdy droga moze byc znaleziona wczesniej \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{pathfinding_8cpp_a774a99c936f377872d3bdf11afdefe73}\label{pathfinding_8cpp_a774a99c936f377872d3bdf11afdefe73}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!findiname@{findiname}}
+\index{findiname@{findiname}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{findiname()}{findiname()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities}{lcities}}$\ast$ findiname (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{const string \&}]{cityA }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajduje i zwraca wskaznik na element ze struktury mapy, ktory wskazuje na miasto o zadanej nazwie. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Funkcja moze zglosic wyjatek noroute, gdyz jesli szukamy jakiejs drogi, a miasto nie isnieje to nie mozna kontynuowac poszukiwan. findinpath jest zatem niemal bezuzyteczna poza \mbox{\hyperlink{pathfinding_8h_a9d7254849f1ab5e9b3fb4c4b9604d857}{findshort\+A\+B()}}. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na tablice pathtab \\
+\hline
+{\em cityA} & -\/ nazwa szukanego miasta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+element -\/ wskaznik na szukany element mapy 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em noroute} & -\/ gdy nie odnaleziono elementu \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{pathfinding_8cpp_ad0f2522769dfcd2ad25c3fc4ff40d7a0}\label{pathfinding_8cpp_ad0f2522769dfcd2ad25c3fc4ff40d7a0}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!findinpath@{findinpath}}
+\index{findinpath@{findinpath}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{findinpath()}{findinpath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpathtab}{pathtab}}$\ast$ findinpath (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path,  }\item[{const string \&}]{cityA }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajduje i zwraca wskaznik na element z tablicy pathtab, ktory wskazuje na miasto o zadanej nazwie. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Nie wolno szukac elementow ktore nie istnieja, szczegolnie jesli wywolujemy to z funkcji \mbox{\hyperlink{pathfinding_8h_a9d7254849f1ab5e9b3fb4c4b9604d857}{findshort\+A\+B()}}. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em path} & -\/ wskaznik na tablice pathtab \\
+\hline
+{\em cityA} & -\/ nazwa szukanego miasta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+element -\/ wskaznik na szukany element tablicy pathtab 
+
+nullptr -\/ gdy nie odnaleziono elementu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pathfinding_8cpp_a25ca32e0109afa314f7a0159e9a0bd41}\label{pathfinding_8cpp_a25ca32e0109afa314f7a0159e9a0bd41}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!findinvisited@{findinvisited}}
+\index{findinvisited@{findinvisited}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{findinvisited()}{findinvisited()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structldirect}{ldirect}}$\ast$ findinvisited (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&}]{p\+Visited,  }\item[{const string \&}]{city }\end{DoxyParamCaption})}
+
+
+
+Odnajduje w strukturze ldirect element o zadanej nazwie. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Funkcja nie wypisuje dystansu z A do B, tylko poszczegolne dystanse z tablicy pathtab. Poleca sie uzycie weightless na tablicy pathtab by otrzymac poprawne dane, z $\vert$\+X-\/\+Y$\vert$, a nie $\vert$\+A-\/\+X$\vert$+$\vert$\+X-\/\+Y$\vert$. 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{Zobacz również}
+wieghtless 
+
+\mbox{\hyperlink{pathfinding_8h_a9d7254849f1ab5e9b3fb4c4b9604d857}{findshort\+AB}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Visited} & -\/ wskaznik na strukture trasy z A do B \\
+\hline
+{\em city} & -\/ nazwa szukanego miasta \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+p\+HeadV -\/ wskaznik na szukany element 
+
+nullptr -\/ gdy miasto nie istnieje w strukturze 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pathfinding_8cpp_a47b47a6c5e72861b2282d1c41e8857af}\label{pathfinding_8cpp_a47b47a6c5e72861b2282d1c41e8857af}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!findmin@{findmin}}
+\index{findmin@{findmin}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{findmin()}{findmin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpathtab}{pathtab}}$\ast$ findmin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path,  }\item[{const string \&}]{cityA }\end{DoxyParamCaption})}
+
+
+
+Funkcja znajduje w tablicy pathtab wskaznik na minimalna wartosc wiercholka, co jest jednym z kloczowych krokow algorytmu Dijksty. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Minimimum moze okazac sie nieskonczonoscia, czyli 0. Funkcja pomija miasto A oraz miasta odwiedzone, wiec jesli wszystkie byly odwiedzone to zwroci wartosc poczatku tablicy pathtab. ~\newline
+ Findmin porownoje wagi (value, czyli sdist), a nie dystanse ze struktury mapy! 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em path} & -\/ wskaznik na pathtab \\
+\hline
+{\em cityA} & -\/ nazwa miasta do ignorowania (wynika to z algorytmu Dijkstry, gdzie do miasta pczatkowego nie wracamy) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+min -\/ wskaznik na minimalny pod wzgledem sdist i zgodny z algorytmem element tablicy pathtab 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em noroute} & gdy miasto nie istnieje \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{pathfinding_8cpp_a9d7254849f1ab5e9b3fb4c4b9604d857}\label{pathfinding_8cpp_a9d7254849f1ab5e9b3fb4c4b9604d857}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!findshort\+AB@{findshort\+AB}}
+\index{findshort\+AB@{findshort\+AB}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{findshort\+A\+B()}{findshortAB()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpathtab}{pathtab}} findshort\+AB (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{const string \&}]{cityA,  }\item[{const string}]{cityB,  }\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypelnia tablice pathtab wagami odleglosci punktu B od A. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Wagi nie sa rownie odleglosciom $\vert$\+X-\/\+Y$\vert$, tylko $\vert$\+A-\/\+X$\vert$+$\vert$\+X-\/\+Y$\vert$. Aby miec w tablicy odleglosci miedzy poszczegolnymi wierzcholkami nalezy ja podac funkcji \mbox{\hyperlink{pathfinding_8h_a3a402a1a8e01638b441e89c851620eba}{weightless()}} 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+{\em cityA} & -\/ nazwa miasta A \\
+\hline
+{\em cityB} & -\/ nazwa miasta B \\
+\hline
+{\em path} & -\/ wkaznik na tablice pathtab \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+path -\/ uzupelniona wagami tablica pathtab 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em earlyhit} & -\/ jesli droga zostala znaleziona wczesniej, niz odwiedzenie wszystkich miast przez Dijkstre \\
+\hline
+{\em noroute} & -\/ jesli nie istnieje zadna droga z miata A \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyWarning}{Ostrzeżenie}
+Mozna sobie pozwolic na earlyhit, nawet w strukturze mapy rozdzielnej, gdzie nie kazda droge mozna osiagnac, ~\newline
+ gdyz przejscie do nieosiagalnej czesci mapy jest ostatecznocia ograniczana przez findmin, a jesli tak sie stalo to alloradexist ponownie zabezpiecza niepoprawny wynik. 
+\end{DoxyWarning}
+\mbox{\Hypertarget{pathfinding_8cpp_a74ccff7ae4c9aed242437bd09b199716}\label{pathfinding_8cpp_a74ccff7ae4c9aed242437bd09b199716}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!getweight@{getweight}}
+\index{getweight@{getweight}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{getweight()}{getweight()}}
+{\footnotesize\ttfamily double getweight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path,  }\item[{const string \&}]{city }\end{DoxyParamCaption})}
+
+
+
+Funkcja zbiera wage nadana przez findshort\+AB do sdist w elemencie wskazujacym na szukana nazwe miasta. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Szczegolnie dobym uzyciem tej funkcji jest zebranie odleglosci z A do B przez uzyciem weightless na tablicy pathtab, daje to gotowa sume dystansow. ~\newline
+ Droga z A do B musi istniec. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em path} & -\/ wskaznik na tablice pathtab \\
+\hline
+{\em city} & -\/ nazwa miasta o szukanej wadze \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+value -\/ waga odleglosci 
+
+0 -\/ gdy waga jest nie mozliwa do odnalezienia 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pathfinding_8cpp_aaf58cc999efce529686df35590843cb4}\label{pathfinding_8cpp_aaf58cc999efce529686df35590843cb4}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!initialize@{initialize}}
+\index{initialize@{initialize}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structpathtab}{pathtab}}$\ast$ initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path }\end{DoxyParamCaption})}
+
+
+
+Funkcja inicjalizuje liste (tablice) pathtab na podstawie wierzcholkow struktuy mapy. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Wartosci domyslne elelentow listy to\+: new pathtab\{ p\+HeadN,0,nullptr,false,nullptr \} 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+{\em path} & -\/ wskaznik na pathtab do utworzenia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+path -\/ wskaznik na zainicjalizowana tablice 
+
+nullptr -\/jesli p\+Name bylo puste 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pathfinding_8cpp_a19a1031f4deb5f0dda055350bbdf3f33}\label{pathfinding_8cpp_a19a1031f4deb5f0dda055350bbdf3f33}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!interpret@{interpret}}
+\index{interpret@{interpret}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{interpret()}{interpret()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structldirect}{ldirect}}$\ast$ interpret (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path,  }\item[{const string \&}]{cityA,  }\item[{const string \&}]{cityB,  }\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypelnia strukture ldirect trasami a punktu A do B na podstawie wartosci vertex i pvertex z tablicy pathtab. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em path} & -\/ wskaznik na tablice pathtab \\
+\hline
+{\em cityA} & -\/ nazwa miasta A \\
+\hline
+{\em cityB} & -\/ nazwa miasta B \\
+\hline
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+p\+Visited -\/ struktura zawierajaca intersujaca nas droge z A do B 
+
+nullptr -\/ w wypadku niepowodzenia/przerwania petli 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em noroute} & -\/ gdy funkcja otrzyma sygnal, ze droga nie istnieje \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{pathfinding_8cpp_a3a402a1a8e01638b441e89c851620eba}\label{pathfinding_8cpp_a3a402a1a8e01638b441e89c851620eba}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!weightless@{weightless}}
+\index{weightless@{weightless}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{weightless()}{weightless()}}
+{\footnotesize\ttfamily void weightless (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&}]{route,  }\item[{const string \&}]{endcity,  }\item[{const string \&}]{startcity }\end{DoxyParamCaption})}
+
+
+
+Funkcja przywroci dystanse z $\vert$\+X-\/\+Y$\vert$ usuwajac odleglosc $\vert$\+A-\/\+X$\vert$, powstale w wyniku algorytmu Dijkstry. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em route} & -\/ wskaznik na strukture trasy z A do B \\
+\hline
+{\em endcity} & -\/ nazwa miasta koncowego \\
+\hline
+{\em startcity} & -\/ wskaznik na miasto poczatkowe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pathfinding_8cpp_a1b4dc9179dbf59355efce07448be105d}\label{pathfinding_8cpp_a1b4dc9179dbf59355efce07448be105d}} 
+\index{pathfinding.\+cpp@{pathfinding.\+cpp}!writeroute@{writeroute}}
+\index{writeroute@{writeroute}!pathfinding.\+cpp@{pathfinding.\+cpp}}
+\subsubsection{\texorpdfstring{writeroute()}{writeroute()}}
+{\footnotesize\ttfamily void writeroute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&}]{route,  }\item[{ostream \&}]{stream }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisuje do zadanego strumienia droge z A do B. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em route} & -\/ wskaznik na strukture trasy \\
+\hline
+{\em stream} & -\/ strumien wyjsciowy do zapisu \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}

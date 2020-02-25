@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mapa: Dokumentacja pliku Mapheader.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mapa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4c8cf85762cb1998d0c18f88ec599217.html">projekt-02</a></li><li class="navelem"><a class="el" href="dir_08c86b01266eff09fc34d82bace979b5.html">Mapa</a></li><li class="navelem"><a class="el" href="dir_bb1f29e49c897877093dbdc54e3da301.html">Mapav1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#enum-members">Wyliczenia</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Mapheader.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+</div>
+<p><a href="_mapheader_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlcities.html">lcities</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura mapy zlozonej z drog jednokierunkowych. lcities to lista list. Struktura reprezentuje miasto. Miasta tworza liste jednokierunkowa. Kazdemu miastu przypisana jest droga lub lista drog wychodzacych do innych miast.  <a href="structlcities.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlcities_1_1ldist.html">lcities::ldist</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura dystansow w mapie.  <a href="structlcities_1_1ldist.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structexistindex.html">existindex</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura dla funkcji existroad, z informacjami o (nie)istnieniu miast oraz wskaznikach na nie. Struktura jest uzupelniana funkcja existroad, by stanowic podstawy do uzupelniania listy przy ladowaniu miast lub nie.  <a href="structexistindex.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structpathtab.html">pathtab</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura do podawania wag odleglosciowych i poprawnego wykonania algorytmu Dijkstry, dalej zwana pathtab.  <a href="structpathtab.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structldirect.html">ldirect</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struktura drogi z A do B. Struktura wskazuje na elementy tablicy pathtab (pathtab), przez ktore nalezy isc aby dotrzec z miasta A do miasta B, a dokladniej z miasta B do miasta A, <br />
+ poniewaz funkcje poruszaja sie z vertex do pvertex poczynajac od vertex wskazujacy na miasto B.  <a href="structldirect.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Wyliczenia</h2></td></tr>
+<tr class="memitem:a21d3970e295e6af7a3a4cec2869cae2b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2b">errorid</a> { <br />
+&#160;&#160;<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2ba5b9f6d065e6e98483b3d3ed01f4f6cbe">unknown</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2baa571dbf110b667ac320e499b178d1bf7">maperr</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2bae1f35f11866c5e461257155f25f46c34">wasdiffrentdist</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2baf429fc07f67d33a442691074b502c5fa">noroute</a>, 
+<br />
+&#160;&#160;<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2baed5ef508bbe2f04407f7fbca1be3793c">earlyhit</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2ba7b1622b1aca67a70b101b21bbb2f1b5a">maplineerr</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2baa5ff38ff1d3b66e09869c228ff96031d">nominusd</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2bafbca77623a6dc5c283a7d58072880227">nominust</a>, 
+<br />
+&#160;&#160;<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2ba214b82ab54718c2293850ea09e53b3f9">nominuso</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2ba65f4d53c2adb4053dab6446c74620558">outferr</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2ba3ac83dbf895c85e50a37ecfe9a7bf29a">routeferr</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2ba7ab631021d5783d2710dec81ce5f6909">noTnoO</a>, 
+<br />
+&#160;&#160;<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2bacd6b19c2c8aecd00d8a14cf641c372ef">donothing</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2baeea52e8de3df5d4aa13a3a0f777ac9e2">nodist</a>, 
+<a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2ba7e391f330ef569ed21b5be41d7b26599">okdist</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:a21d3970e295e6af7a3a4cec2869cae2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wyliczenie wyjatkow programu. Zawiera wszystkie identyfikatory wszystkich wyjatkow, ktore pojawiaja sie w programie.  <a href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2b">Więcej...</a><br /></td></tr>
+<tr class="separator:a21d3970e295e6af7a3a4cec2869cae2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja typów wyliczanych</h2>
+<a id="a21d3970e295e6af7a3a4cec2869cae2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21d3970e295e6af7a3a4cec2869cae2b">&#9670;&nbsp;</a></span>errorid</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2b">errorid</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wyliczenie wyjatkow programu. Zawiera wszystkie identyfikatory wszystkich wyjatkow, ktore pojawiaja sie w programie. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Wartości wyliczeń</th></tr><tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2ba5b9f6d065e6e98483b3d3ed01f4f6cbe"></a>unknown&#160;</td><td class="fielddoc"><p>0 nieznany </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2baa571dbf110b667ac320e499b178d1bf7"></a>maperr&#160;</td><td class="fielddoc"><p>1 blad pliku mapy </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2bae1f35f11866c5e461257155f25f46c34"></a>wasdiffrentdist&#160;</td><td class="fielddoc"><p>2 blad dystansu do existindex </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2baf429fc07f67d33a442691074b502c5fa"></a>noroute&#160;</td><td class="fielddoc"><p>3 nie ma drogi </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2baed5ef508bbe2f04407f7fbca1be3793c"></a>earlyhit&#160;</td><td class="fielddoc"><p>4 znaleziono trase </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2ba7b1622b1aca67a70b101b21bbb2f1b5a"></a>maplineerr&#160;</td><td class="fielddoc"><p>5 blad linii w mapie </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2baa5ff38ff1d3b66e09869c228ff96031d"></a>nominusd&#160;</td><td class="fielddoc"><p>6 brak pliku mapy </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2bafbca77623a6dc5c283a7d58072880227"></a>nominust&#160;</td><td class="fielddoc"><p>7 brak pliku tras od wyznaczenia </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2ba214b82ab54718c2293850ea09e53b3f9"></a>nominuso&#160;</td><td class="fielddoc"><p>8 brak pliku wyjsciowego </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2ba65f4d53c2adb4053dab6446c74620558"></a>outferr&#160;</td><td class="fielddoc"><p>9 blad pliku wyjsciowego </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2ba3ac83dbf895c85e50a37ecfe9a7bf29a"></a>routeferr&#160;</td><td class="fielddoc"><p>10 blad pliku z trasami do wyznaczenia </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2ba7ab631021d5783d2710dec81ce5f6909"></a>noTnoO&#160;</td><td class="fielddoc"><p>11 nie podano ani pliku z trasami, ani wyjsciowego </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2bacd6b19c2c8aecd00d8a14cf641c372ef"></a>donothing&#160;</td><td class="fielddoc"><p>12 nie rob nic, koncz program </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2baeea52e8de3df5d4aa13a3a0f777ac9e2"></a>nodist&#160;</td><td class="fielddoc"><p>13 nie ma drogi do existindex </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a21d3970e295e6af7a3a4cec2869cae2ba7e391f330ef569ed21b5be41d7b26599"></a>okdist&#160;</td><td class="fielddoc"><p>14 droga jest taka sama jak podana </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

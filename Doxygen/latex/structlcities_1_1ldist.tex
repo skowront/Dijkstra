@@ -1,0 +1,60 @@
+\hypertarget{structlcities_1_1ldist}{}\section{Dokumentacja struktury lcities\+:\+:ldist}
+\label{structlcities_1_1ldist}\index{lcities\+::ldist@{lcities\+::ldist}}
+
+
+Struktura dystansow w mapie.  
+
+
+
+
+{\ttfamily \#include $<$Mapheader.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{structlcities_1_1ldist_a7bd7a2a51dcb4918af11c8f6da7191d5}{dist}} = 0
+\item 
+\mbox{\hyperlink{structlcities}{lcities}} $\ast$ \mbox{\hyperlink{structlcities_1_1ldist_ab6641f5f7e8a9b3f5bee7ad9be7d3ecb}{p\+Next\+City}} = nullptr
+\item 
+\mbox{\hyperlink{structlcities_1_1ldist}{ldist}} $\ast$ \mbox{\hyperlink{structlcities_1_1ldist_af615449e5ee90bff344ca3169a3c1c7b}{p\+Next\+Dist}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Struktura dystansow w mapie. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Struktura dalej zwana mapa. ldist zdefiniowane w lcities, to struktura zawierajaca wartosc, interpretowana jako odleglosc lub droga o danym dystansie z miasta wskazujacego na ten element ~\newline
+ do miasta, na ktory element wskazuje. Elementy tworza liste jednokierunkowa, ktora jest podwieszona do jakiegos miasta. 
+
+W tabeli X oznacza zupelnie dowolne miasto/miasta o n-\/tym/n-\/tych indeksie/indeksach. ~\newline
+ \char`\"{}...-\/$>$\+V.\+X.\char`\"{} to wskaznik na liste w dol tabeli ~\newline
+ \char`\"{}...-\/$>$$>$$>$..\char`\"{} to wskaznik na nastepny element w wierszu tabeli. ~\newline
+ Struktura rzeczywista moze sie znaczaco roznic od przykladowej w niektorych przypadkach co do wartosci, ale nie co do konceptu. 
+\end{DoxyWarning}
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{structlcities_1_1ldist_a7bd7a2a51dcb4918af11c8f6da7191d5}\label{structlcities_1_1ldist_a7bd7a2a51dcb4918af11c8f6da7191d5}} 
+\index{lcities\+::ldist@{lcities\+::ldist}!dist@{dist}}
+\index{dist@{dist}!lcities\+::ldist@{lcities\+::ldist}}
+\subsubsection{\texorpdfstring{dist}{dist}}
+{\footnotesize\ttfamily double lcities\+::ldist\+::dist = 0}
+
+odleglosc drogi miedzy miastami \mbox{\Hypertarget{structlcities_1_1ldist_ab6641f5f7e8a9b3f5bee7ad9be7d3ecb}\label{structlcities_1_1ldist_ab6641f5f7e8a9b3f5bee7ad9be7d3ecb}} 
+\index{lcities\+::ldist@{lcities\+::ldist}!p\+Next\+City@{p\+Next\+City}}
+\index{p\+Next\+City@{p\+Next\+City}!lcities\+::ldist@{lcities\+::ldist}}
+\subsubsection{\texorpdfstring{p\+Next\+City}{pNextCity}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities}{lcities}}$\ast$ lcities\+::ldist\+::p\+Next\+City = nullptr}
+
+wskaznik na miasto w do ktorego prowadzi droga \mbox{\Hypertarget{structlcities_1_1ldist_af615449e5ee90bff344ca3169a3c1c7b}\label{structlcities_1_1ldist_af615449e5ee90bff344ca3169a3c1c7b}} 
+\index{lcities\+::ldist@{lcities\+::ldist}!p\+Next\+Dist@{p\+Next\+Dist}}
+\index{p\+Next\+Dist@{p\+Next\+Dist}!lcities\+::ldist@{lcities\+::ldist}}
+\subsubsection{\texorpdfstring{p\+Next\+Dist}{pNextDist}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities_1_1ldist}{ldist}}$\ast$ lcities\+::ldist\+::p\+Next\+Dist = nullptr}
+
+wskaznik na nastepna droge wychodzaca z miasta 
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mapheader_8h}{Mapheader.\+h}}\end{DoxyCompactItemize}

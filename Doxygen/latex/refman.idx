@@ -1,0 +1,207 @@
+\indexentry{existindex@{existindex}|hyperpage}{5}
+\indexentry{existindex@{existindex}!correctdist@{correctdist}|hyperpage}{5}
+\indexentry{correctdist@{correctdist}!existindex@{existindex}|hyperpage}{5}
+\indexentry{existindex@{existindex}!existA@{existA}|hyperpage}{5}
+\indexentry{existA@{existA}!existindex@{existindex}|hyperpage}{5}
+\indexentry{existindex@{existindex}!existB@{existB}|hyperpage}{6}
+\indexentry{existB@{existB}!existindex@{existindex}|hyperpage}{6}
+\indexentry{existindex@{existindex}!locationptrA@{locationptrA}|hyperpage}{6}
+\indexentry{locationptrA@{locationptrA}!existindex@{existindex}|hyperpage}{6}
+\indexentry{existindex@{existindex}!locationptrB@{locationptrB}|hyperpage}{6}
+\indexentry{locationptrB@{locationptrB}!existindex@{existindex}|hyperpage}{6}
+\indexentry{lcities@{lcities}|hyperpage}{6}
+\indexentry{lcities@{lcities}!city@{city}|hyperpage}{7}
+\indexentry{city@{city}!lcities@{lcities}|hyperpage}{7}
+\indexentry{lcities@{lcities}!p\+Next\+City@{p\+Next\+City}|hyperpage}{7}
+\indexentry{p\+Next\+City@{p\+Next\+City}!lcities@{lcities}|hyperpage}{7}
+\indexentry{lcities@{lcities}!p\+Next\+Dist@{p\+Next\+Dist}|hyperpage}{7}
+\indexentry{p\+Next\+Dist@{p\+Next\+Dist}!lcities@{lcities}|hyperpage}{7}
+\indexentry{ldirect@{ldirect}|hyperpage}{7}
+\indexentry{ldirect@{ldirect}!lv\+Next@{lv\+Next}|hyperpage}{8}
+\indexentry{lv\+Next@{lv\+Next}!ldirect@{ldirect}|hyperpage}{8}
+\indexentry{ldirect@{ldirect}!vertex@{vertex}|hyperpage}{8}
+\indexentry{vertex@{vertex}!ldirect@{ldirect}|hyperpage}{8}
+\indexentry{lcities\+::ldist@{lcities\+::ldist}|hyperpage}{8}
+\indexentry{lcities\+::ldist@{lcities\+::ldist}!dist@{dist}|hyperpage}{9}
+\indexentry{dist@{dist}!lcities\+::ldist@{lcities\+::ldist}|hyperpage}{9}
+\indexentry{lcities\+::ldist@{lcities\+::ldist}!p\+Next\+City@{p\+Next\+City}|hyperpage}{9}
+\indexentry{p\+Next\+City@{p\+Next\+City}!lcities\+::ldist@{lcities\+::ldist}|hyperpage}{9}
+\indexentry{lcities\+::ldist@{lcities\+::ldist}!p\+Next\+Dist@{p\+Next\+Dist}|hyperpage}{9}
+\indexentry{p\+Next\+Dist@{p\+Next\+Dist}!lcities\+::ldist@{lcities\+::ldist}|hyperpage}{9}
+\indexentry{pathtab@{pathtab}|hyperpage}{9}
+\indexentry{pathtab@{pathtab}!nextpathtab@{nextpathtab}|hyperpage}{10}
+\indexentry{nextpathtab@{nextpathtab}!pathtab@{pathtab}|hyperpage}{10}
+\indexentry{pathtab@{pathtab}!pvertex@{pvertex}|hyperpage}{10}
+\indexentry{pvertex@{pvertex}!pathtab@{pathtab}|hyperpage}{10}
+\indexentry{pathtab@{pathtab}!sdist@{sdist}|hyperpage}{10}
+\indexentry{sdist@{sdist}!pathtab@{pathtab}|hyperpage}{10}
+\indexentry{pathtab@{pathtab}!vertex@{vertex}|hyperpage}{10}
+\indexentry{vertex@{vertex}!pathtab@{pathtab}|hyperpage}{10}
+\indexentry{pathtab@{pathtab}!visited@{visited}|hyperpage}{10}
+\indexentry{visited@{visited}!pathtab@{pathtab}|hyperpage}{10}
+\indexentry{Cleanse.\+cpp@{Cleanse.\+cpp}|hyperpage}{11}
+\indexentry{Cleanse.\+cpp@{Cleanse.\+cpp}!clean@{clean}|hyperpage}{12}
+\indexentry{clean@{clean}!Cleanse.\+cpp@{Cleanse.\+cpp}|hyperpage}{12}
+\indexentry{Cleanse.\+cpp@{Cleanse.\+cpp}!cleanpath@{cleanpath}|hyperpage}{12}
+\indexentry{cleanpath@{cleanpath}!Cleanse.\+cpp@{Cleanse.\+cpp}|hyperpage}{12}
+\indexentry{Cleanse.\+cpp@{Cleanse.\+cpp}!cleanroute@{cleanroute}|hyperpage}{12}
+\indexentry{cleanroute@{cleanroute}!Cleanse.\+cpp@{Cleanse.\+cpp}|hyperpage}{12}
+\indexentry{Cleanse.\+cpp@{Cleanse.\+cpp}!complexclean@{complexclean}|hyperpage}{13}
+\indexentry{complexclean@{complexclean}!Cleanse.\+cpp@{Cleanse.\+cpp}|hyperpage}{13}
+\indexentry{Cleanse.\+h@{Cleanse.\+h}|hyperpage}{13}
+\indexentry{Cleanse.\+h@{Cleanse.\+h}!clean@{clean}|hyperpage}{14}
+\indexentry{clean@{clean}!Cleanse.\+h@{Cleanse.\+h}|hyperpage}{14}
+\indexentry{Cleanse.\+h@{Cleanse.\+h}!cleanpath@{cleanpath}|hyperpage}{14}
+\indexentry{cleanpath@{cleanpath}!Cleanse.\+h@{Cleanse.\+h}|hyperpage}{14}
+\indexentry{Cleanse.\+h@{Cleanse.\+h}!cleanroute@{cleanroute}|hyperpage}{15}
+\indexentry{cleanroute@{cleanroute}!Cleanse.\+h@{Cleanse.\+h}|hyperpage}{15}
+\indexentry{Cleanse.\+h@{Cleanse.\+h}!complexclean@{complexclean}|hyperpage}{15}
+\indexentry{complexclean@{complexclean}!Cleanse.\+h@{Cleanse.\+h}|hyperpage}{15}
+\indexentry{Loading.\+cpp@{Loading.\+cpp}|hyperpage}{16}
+\indexentry{Loading.\+cpp@{Loading.\+cpp}!addcity@{addcity}|hyperpage}{17}
+\indexentry{addcity@{addcity}!Loading.\+cpp@{Loading.\+cpp}|hyperpage}{17}
+\indexentry{Loading.\+cpp@{Loading.\+cpp}!addroad@{addroad}|hyperpage}{17}
+\indexentry{addroad@{addroad}!Loading.\+cpp@{Loading.\+cpp}|hyperpage}{17}
+\indexentry{Loading.\+cpp@{Loading.\+cpp}!existroad@{existroad}|hyperpage}{18}
+\indexentry{existroad@{existroad}!Loading.\+cpp@{Loading.\+cpp}|hyperpage}{18}
+\indexentry{Loading.\+cpp@{Loading.\+cpp}!loadroad@{loadroad}|hyperpage}{18}
+\indexentry{loadroad@{loadroad}!Loading.\+cpp@{Loading.\+cpp}|hyperpage}{18}
+\indexentry{Loading.\+h@{Loading.\+h}|hyperpage}{19}
+\indexentry{Loading.\+h@{Loading.\+h}!addcity@{addcity}|hyperpage}{20}
+\indexentry{addcity@{addcity}!Loading.\+h@{Loading.\+h}|hyperpage}{20}
+\indexentry{Loading.\+h@{Loading.\+h}!addroad@{addroad}|hyperpage}{20}
+\indexentry{addroad@{addroad}!Loading.\+h@{Loading.\+h}|hyperpage}{20}
+\indexentry{Loading.\+h@{Loading.\+h}!existroad@{existroad}|hyperpage}{21}
+\indexentry{existroad@{existroad}!Loading.\+h@{Loading.\+h}|hyperpage}{21}
+\indexentry{Loading.\+h@{Loading.\+h}!loadroad@{loadroad}|hyperpage}{21}
+\indexentry{loadroad@{loadroad}!Loading.\+h@{Loading.\+h}|hyperpage}{21}
+\indexentry{Mapa.\+cpp@{Mapa.\+cpp}|hyperpage}{22}
+\indexentry{Mapa.\+cpp@{Mapa.\+cpp}!main@{main}|hyperpage}{22}
+\indexentry{main@{main}!Mapa.\+cpp@{Mapa.\+cpp}|hyperpage}{22}
+\indexentry{Mapheader.\+h@{Mapheader.\+h}|hyperpage}{23}
+\indexentry{Mapheader.\+h@{Mapheader.\+h}!errorid@{errorid}|hyperpage}{24}
+\indexentry{errorid@{errorid}!Mapheader.\+h@{Mapheader.\+h}|hyperpage}{24}
+\indexentry{unknown@{unknown}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!unknown@{unknown}|hyperpage}{24}
+\indexentry{maperr@{maperr}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!maperr@{maperr}|hyperpage}{24}
+\indexentry{wasdiffrentdist@{wasdiffrentdist}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!wasdiffrentdist@{wasdiffrentdist}|hyperpage}{24}
+\indexentry{noroute@{noroute}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!noroute@{noroute}|hyperpage}{24}
+\indexentry{earlyhit@{earlyhit}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!earlyhit@{earlyhit}|hyperpage}{24}
+\indexentry{maplineerr@{maplineerr}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!maplineerr@{maplineerr}|hyperpage}{24}
+\indexentry{nominusd@{nominusd}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!nominusd@{nominusd}|hyperpage}{24}
+\indexentry{nominust@{nominust}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!nominust@{nominust}|hyperpage}{24}
+\indexentry{nominuso@{nominuso}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!nominuso@{nominuso}|hyperpage}{24}
+\indexentry{outferr@{outferr}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!outferr@{outferr}|hyperpage}{24}
+\indexentry{routeferr@{routeferr}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!routeferr@{routeferr}|hyperpage}{24}
+\indexentry{no\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}TnoO@{no\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}TnoO}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!no\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}TnoO@{no\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}TnoO}|hyperpage}{24}
+\indexentry{donothing@{donothing}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!donothing@{donothing}|hyperpage}{24}
+\indexentry{nodist@{nodist}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!nodist@{nodist}|hyperpage}{24}
+\indexentry{okdist@{okdist}!Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}|hyperpage}{24}
+\indexentry{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h@{Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize  {7}{8}\selectfont  $\leftarrow \joinrel  \rhook $}}{}{}h}!okdist@{okdist}|hyperpage}{24}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{24}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!allroadexist@{allroadexist}|hyperpage}{26}
+\indexentry{allroadexist@{allroadexist}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{26}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!allvisited@{allvisited}|hyperpage}{26}
+\indexentry{allvisited@{allvisited}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{26}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!existroad\+AtoB@{existroad\+AtoB}|hyperpage}{27}
+\indexentry{existroad\+AtoB@{existroad\+AtoB}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{27}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!existV@{existV}|hyperpage}{27}
+\indexentry{existV@{existV}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{27}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!findiname@{findiname}|hyperpage}{28}
+\indexentry{findiname@{findiname}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{28}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!findinpath@{findinpath}|hyperpage}{28}
+\indexentry{findinpath@{findinpath}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{28}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!findinvisited@{findinvisited}|hyperpage}{29}
+\indexentry{findinvisited@{findinvisited}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{29}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!findmin@{findmin}|hyperpage}{29}
+\indexentry{findmin@{findmin}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{29}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!findshort\+AB@{findshort\+AB}|hyperpage}{30}
+\indexentry{findshort\+AB@{findshort\+AB}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{30}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!getweight@{getweight}|hyperpage}{31}
+\indexentry{getweight@{getweight}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{31}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!initialize@{initialize}|hyperpage}{31}
+\indexentry{initialize@{initialize}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{31}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!interpret@{interpret}|hyperpage}{32}
+\indexentry{interpret@{interpret}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{32}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!weightless@{weightless}|hyperpage}{32}
+\indexentry{weightless@{weightless}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{32}
+\indexentry{pathfinding.\+cpp@{pathfinding.\+cpp}!writeroute@{writeroute}|hyperpage}{33}
+\indexentry{writeroute@{writeroute}!pathfinding.\+cpp@{pathfinding.\+cpp}|hyperpage}{33}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}|hyperpage}{33}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!allroadexist@{allroadexist}|hyperpage}{34}
+\indexentry{allroadexist@{allroadexist}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{34}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!allvisited@{allvisited}|hyperpage}{35}
+\indexentry{allvisited@{allvisited}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{35}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!existroad\+AtoB@{existroad\+AtoB}|hyperpage}{35}
+\indexentry{existroad\+AtoB@{existroad\+AtoB}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{35}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!existV@{existV}|hyperpage}{36}
+\indexentry{existV@{existV}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{36}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!findiname@{findiname}|hyperpage}{36}
+\indexentry{findiname@{findiname}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{36}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!findinpath@{findinpath}|hyperpage}{37}
+\indexentry{findinpath@{findinpath}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{37}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!findinvisited@{findinvisited}|hyperpage}{37}
+\indexentry{findinvisited@{findinvisited}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{37}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!findmin@{findmin}|hyperpage}{38}
+\indexentry{findmin@{findmin}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{38}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!findshort\+AB@{findshort\+AB}|hyperpage}{39}
+\indexentry{findshort\+AB@{findshort\+AB}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{39}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!getweight@{getweight}|hyperpage}{39}
+\indexentry{getweight@{getweight}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{39}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!initialize@{initialize}|hyperpage}{40}
+\indexentry{initialize@{initialize}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{40}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!interpret@{interpret}|hyperpage}{40}
+\indexentry{interpret@{interpret}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{40}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!weightless@{weightless}|hyperpage}{41}
+\indexentry{weightless@{weightless}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{41}
+\indexentry{pathfinding.\+h@{pathfinding.\+h}!writeroute@{writeroute}|hyperpage}{41}
+\indexentry{writeroute@{writeroute}!pathfinding.\+h@{pathfinding.\+h}|hyperpage}{41}
+\indexentry{Service.\+cpp@{Service.\+cpp}|hyperpage}{42}
+\indexentry{Service.\+cpp@{Service.\+cpp}!allexcep@{allexcep}|hyperpage}{43}
+\indexentry{allexcep@{allexcep}!Service.\+cpp@{Service.\+cpp}|hyperpage}{43}
+\indexentry{Service.\+cpp@{Service.\+cpp}!core@{core}|hyperpage}{43}
+\indexentry{core@{core}!Service.\+cpp@{Service.\+cpp}|hyperpage}{43}
+\indexentry{Service.\+cpp@{Service.\+cpp}!correctparams@{correctparams}|hyperpage}{44}
+\indexentry{correctparams@{correctparams}!Service.\+cpp@{Service.\+cpp}|hyperpage}{44}
+\indexentry{Service.\+cpp@{Service.\+cpp}!doparameters@{doparameters}|hyperpage}{44}
+\indexentry{doparameters@{doparameters}!Service.\+cpp@{Service.\+cpp}|hyperpage}{44}
+\indexentry{Service.\+cpp@{Service.\+cpp}!mainexception@{mainexception}|hyperpage}{45}
+\indexentry{mainexception@{mainexception}!Service.\+cpp@{Service.\+cpp}|hyperpage}{45}
+\indexentry{Service.\+cpp@{Service.\+cpp}!noroad@{noroad}|hyperpage}{46}
+\indexentry{noroad@{noroad}!Service.\+cpp@{Service.\+cpp}|hyperpage}{46}
+\indexentry{Service.\+cpp@{Service.\+cpp}!printhelp@{printhelp}|hyperpage}{46}
+\indexentry{printhelp@{printhelp}!Service.\+cpp@{Service.\+cpp}|hyperpage}{46}
+\indexentry{Service.\+h@{Service.\+h}|hyperpage}{46}
+\indexentry{Service.\+h@{Service.\+h}!allexcep@{allexcep}|hyperpage}{47}
+\indexentry{allexcep@{allexcep}!Service.\+h@{Service.\+h}|hyperpage}{47}
+\indexentry{Service.\+h@{Service.\+h}!core@{core}|hyperpage}{48}
+\indexentry{core@{core}!Service.\+h@{Service.\+h}|hyperpage}{48}
+\indexentry{Service.\+h@{Service.\+h}!correctparams@{correctparams}|hyperpage}{48}
+\indexentry{correctparams@{correctparams}!Service.\+h@{Service.\+h}|hyperpage}{48}
+\indexentry{Service.\+h@{Service.\+h}!doparameters@{doparameters}|hyperpage}{49}
+\indexentry{doparameters@{doparameters}!Service.\+h@{Service.\+h}|hyperpage}{49}
+\indexentry{Service.\+h@{Service.\+h}!mainexception@{mainexception}|hyperpage}{50}
+\indexentry{mainexception@{mainexception}!Service.\+h@{Service.\+h}|hyperpage}{50}
+\indexentry{Service.\+h@{Service.\+h}!noroad@{noroad}|hyperpage}{50}
+\indexentry{noroad@{noroad}!Service.\+h@{Service.\+h}|hyperpage}{50}
+\indexentry{Service.\+h@{Service.\+h}!printhelp@{printhelp}|hyperpage}{51}
+\indexentry{printhelp@{printhelp}!Service.\+h@{Service.\+h}|hyperpage}{51}
+\indexentry{Valid.\+cpp@{Valid.\+cpp}|hyperpage}{51}
+\indexentry{Valid.\+cpp@{Valid.\+cpp}!charonly@{charonly}|hyperpage}{51}
+\indexentry{charonly@{charonly}!Valid.\+cpp@{Valid.\+cpp}|hyperpage}{51}
+\indexentry{Valid.\+h@{Valid.\+h}|hyperpage}{52}
+\indexentry{Valid.\+h@{Valid.\+h}!charonly@{charonly}|hyperpage}{52}
+\indexentry{charonly@{charonly}!Valid.\+h@{Valid.\+h}|hyperpage}{52}

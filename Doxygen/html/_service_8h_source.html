@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mapa: Plik źródłowy Service.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mapa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4c8cf85762cb1998d0c18f88ec599217.html">projekt-02</a></li><li class="navelem"><a class="el" href="dir_08c86b01266eff09fc34d82bace979b5.html">Mapa</a></li><li class="navelem"><a class="el" href="dir_bb1f29e49c897877093dbdc54e3da301.html">Mapav1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Service.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_service_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef Service_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define Service_H </span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mapheader_8h.html">Mapheader.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_service_8h.html#ae11683d4f44426c27f006bdb1e7db95f">printhelp</a>();</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="_service_8h.html#ae47b8ee9b22331b0b34ea1399359bcb2">correctparams</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;ifpath, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;ofpath, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp; rfpath);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_service_8h.html#acdae817f32d56995307d1fe131fdc94f">doparameters</a>(<span class="keywordtype">int</span> paramixmax, <span class="keywordtype">char</span>*params[], <span class="keywordtype">string</span> &amp;mfpath, <span class="keywordtype">string</span> &amp;ofpath, <span class="keywordtype">string</span> &amp; rfpath, <span class="keywordtype">bool</span> &amp; wasrf, <span class="keywordtype">bool</span> &amp; wasof);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_service_8h.html#a871ced8e51ccdaeb281f0ceb38fc693e">noroad</a>(ostream &amp; outfile, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp; cityA, <span class="keyword">const</span> <span class="keywordtype">string</span> cityB);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_service_8h.html#a7d8249df16f85a510eff3384f41abf9d">core</a>(<a class="code" href="structlcities.html">lcities</a> *&amp; pName, <a class="code" href="structpathtab.html">pathtab</a> *&amp; path, <a class="code" href="structldirect.html">ldirect</a> *&amp; route, ostream &amp; outfile, istream &amp; rfile);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">string</span> <a class="code" href="_service_8h.html#a7d130e3a200c6077ee810adc4f12bac1">allexcep</a>(<a class="code" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2b">errorid</a> excep);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">string</span> <a class="code" href="_service_8h.html#aedac38fb8acb693e5267bce7e41bf85b">mainexception</a>(<a class="code" href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2b">errorid</a>  excep, <span class="keywordtype">bool</span> &amp; wasrf, <span class="keywordtype">bool</span> &amp; wasof);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="ttc" id="structpathtab_html"><div class="ttname"><a href="structpathtab.html">pathtab</a></div><div class="ttdoc">Struktura do podawania wag odleglosciowych i poprawnego wykonania algorytmu Dijkstry, dalej zwana pathtab. </div><div class="ttdef"><b>Definition:</b> Mapheader.h:87</div></div>
+<div class="ttc" id="_mapheader_8h_html"><div class="ttname"><a href="_mapheader_8h.html">Mapheader.h</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="structldirect_html"><div class="ttname"><a href="structldirect.html">ldirect</a></div><div class="ttdoc">Struktura drogi z A do B. Struktura wskazuje na elementy tablicy pathtab (pathtab), przez ktore nalezy isc aby dotrzec z miasta A do miasta B, a dokladniej z miasta B do miasta A,   poniewaz funkcje poruszaja sie z vertex do pvertex poczynajac od vertex wskazujacy na miasto B. </div><div class="ttdef"><b>Definition:</b> Mapheader.h:105</div></div>
+<div class="ttc" id="_service_8h_html_a7d8249df16f85a510eff3384f41abf9d"><div class="ttname"><a href="_service_8h.html#a7d8249df16f85a510eff3384f41abf9d">core</a></div><div class="ttdeci">void core(lcities *&amp;pName, pathtab *&amp;path, ldirect *&amp;route, ostream &amp;outfile, istream &amp;rfile)</div><div class="ttdoc">Funkcja obsluguje podane argumenty z linii polecen, ustawia podane parametry na stan adekwatny do syt...</div><div class="ttdef"><b>Definition:</b> Service.cpp:97</div></div>
+<div class="ttc" id="_service_8h_html_ae47b8ee9b22331b0b34ea1399359bcb2"><div class="ttname"><a href="_service_8h.html#ae47b8ee9b22331b0b34ea1399359bcb2">correctparams</a></div><div class="ttdeci">bool correctparams(const string &amp;ifpath, const string &amp;ofpath, const string &amp;rfpath)</div><div class="ttdoc">Funkcja sprawdza poprawnosc parametrow. </div><div class="ttdef"><b>Definition:</b> Service.cpp:28</div></div>
+<div class="ttc" id="_mapheader_8h_html_a21d3970e295e6af7a3a4cec2869cae2b"><div class="ttname"><a href="_mapheader_8h.html#a21d3970e295e6af7a3a4cec2869cae2b">errorid</a></div><div class="ttdeci">errorid</div><div class="ttdoc">Wyliczenie wyjatkow programu. Zawiera wszystkie identyfikatory wszystkich wyjatkow, ktore pojawiaja sie w programie. </div><div class="ttdef"><b>Definition:</b> Mapheader.h:117</div></div>
+<div class="ttc" id="_service_8h_html_a871ced8e51ccdaeb281f0ceb38fc693e"><div class="ttname"><a href="_service_8h.html#a871ced8e51ccdaeb281f0ceb38fc693e">noroad</a></div><div class="ttdeci">void noroad(ostream &amp;outfile, const string &amp;cityA, const string cityB)</div><div class="ttdoc">Funkcja zaisuje do podanego strumienia wyjsciowego informacje o nieistniejacej drodze z A do B...</div><div class="ttdef"><b>Definition:</b> Service.cpp:89</div></div>
+<div class="ttc" id="_service_8h_html_a7d130e3a200c6077ee810adc4f12bac1"><div class="ttname"><a href="_service_8h.html#a7d130e3a200c6077ee810adc4f12bac1">allexcep</a></div><div class="ttdeci">string allexcep(errorid excep)</div><div class="ttdoc">Funkcja obsluguje wszystkie wyjatki ktore moga wystapic w programie. </div><div class="ttdef"><b>Definition:</b> Service.cpp:170</div></div>
+<div class="ttc" id="_service_8h_html_acdae817f32d56995307d1fe131fdc94f"><div class="ttname"><a href="_service_8h.html#acdae817f32d56995307d1fe131fdc94f">doparameters</a></div><div class="ttdeci">void doparameters(int paramixmax, char *params[], string &amp;mfpath, string &amp;ofpath, string &amp;rfpath, bool &amp;wasrf, bool &amp;wasof)</div><div class="ttdoc">Funkcja obsluguje podane argumenty z linii polecen, ustawia podane parametry na stan adekwatny do syt...</div><div class="ttdef"><b>Definition:</b> Service.cpp:49</div></div>
+<div class="ttc" id="_service_8h_html_aedac38fb8acb693e5267bce7e41bf85b"><div class="ttname"><a href="_service_8h.html#aedac38fb8acb693e5267bce7e41bf85b">mainexception</a></div><div class="ttdeci">string mainexception(errorid excep, bool &amp;wasrf, bool &amp;wasof)</div><div class="ttdoc">Funkcja obsluguje tylko czesc wyjatkow specjalnie dla funkcji main. </div><div class="ttdef"><b>Definition:</b> Service.cpp:204</div></div>
+<div class="ttc" id="_service_8h_html_ae11683d4f44426c27f006bdb1e7db95f"><div class="ttname"><a href="_service_8h.html#ae11683d4f44426c27f006bdb1e7db95f">printhelp</a></div><div class="ttdeci">void printhelp()</div><div class="ttdoc">Funkcja wypisuje na ekranie okno pomocy. </div><div class="ttdef"><b>Definition:</b> Service.cpp:13</div></div>
+<div class="ttc" id="structlcities_html"><div class="ttname"><a href="structlcities.html">lcities</a></div><div class="ttdoc">Struktura mapy zlozonej z drog jednokierunkowych. lcities to lista list. Struktura reprezentuje miast...</div><div class="ttdef"><b>Definition:</b> Mapheader.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

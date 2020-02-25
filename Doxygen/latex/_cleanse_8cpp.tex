@@ -1,0 +1,123 @@
+\hypertarget{_cleanse_8cpp}{}\section{Dokumentacja pliku Cleanse.\+cpp}
+\label{_cleanse_8cpp}\index{Cleanse.\+cpp@{Cleanse.\+cpp}}
+
+
+Plik zawiera funkcje do usuwania struktur powstalych w wyniku dzialania programu.  
+
+
+{\ttfamily \#include \char`\"{}Mapheader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Valid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Service.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cleanse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pathfinding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Loading.\+h\char`\"{}}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_cleanse_8cpp_a96321ea503dfbc6d6e0334a26827b1cd}{clean}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name)
+\begin{DoxyCompactList}\small\item\em Funkcja usuwa liste obiektow typu lcities, z lista podrzedna obiektow ldist wlacznie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_cleanse_8cpp_a9f2cb8120adae944432375eb61963e9f}{cleanroute}} (\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&route)
+\begin{DoxyCompactList}\small\item\em Funkcja usuwa strukture typu ldirect. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_cleanse_8cpp_ad384ddb2cdc3a29bcb1d701be3a8080c}{cleanpath}} (\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path)
+\begin{DoxyCompactList}\small\item\em Funkcja usuwa liste elementow typu pathtab. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_cleanse_8cpp_aaadb044380c546445dd4ec493b47ea91}{complexclean}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, bool pn, \mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path, bool pt, \mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&route, bool rt)
+\begin{DoxyCompactList}\small\item\em Wywoluje usuwanie podanych struktur dwokrotnie, po strukturze nalezy podac 1/0 lub true false co decyduje o usuwaniu struktury dla true i pominieciu dla false. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Plik zawiera funkcje do usuwania struktur powstalych w wyniku dzialania programu. 
+
+\begin{DoxyAuthor}{Autor}
+Tomasz Skowron 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{_cleanse_8h}{Cleanse.\+h}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_cleanse_8cpp_a96321ea503dfbc6d6e0334a26827b1cd}\label{_cleanse_8cpp_a96321ea503dfbc6d6e0334a26827b1cd}} 
+\index{Cleanse.\+cpp@{Cleanse.\+cpp}!clean@{clean}}
+\index{clean@{clean}!Cleanse.\+cpp@{Cleanse.\+cpp}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily void clean (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name }\end{DoxyParamCaption})}
+
+
+
+Funkcja usuwa liste obiektow typu lcities, z lista podrzedna obiektow ldist wlacznie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture do usuniecia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_cleanse_8cpp_ad384ddb2cdc3a29bcb1d701be3a8080c}\label{_cleanse_8cpp_ad384ddb2cdc3a29bcb1d701be3a8080c}} 
+\index{Cleanse.\+cpp@{Cleanse.\+cpp}!cleanpath@{cleanpath}}
+\index{cleanpath@{cleanpath}!Cleanse.\+cpp@{Cleanse.\+cpp}}
+\subsubsection{\texorpdfstring{cleanpath()}{cleanpath()}}
+{\footnotesize\ttfamily void cleanpath (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path }\end{DoxyParamCaption})}
+
+
+
+Funkcja usuwa liste elementow typu pathtab. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em path} & -\/ wskaznik na strukture do usuniecia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_cleanse_8cpp_a9f2cb8120adae944432375eb61963e9f}\label{_cleanse_8cpp_a9f2cb8120adae944432375eb61963e9f}} 
+\index{Cleanse.\+cpp@{Cleanse.\+cpp}!cleanroute@{cleanroute}}
+\index{cleanroute@{cleanroute}!Cleanse.\+cpp@{Cleanse.\+cpp}}
+\subsubsection{\texorpdfstring{cleanroute()}{cleanroute()}}
+{\footnotesize\ttfamily void cleanroute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&}]{route }\end{DoxyParamCaption})}
+
+
+
+Funkcja usuwa strukture typu ldirect. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em route} & -\/ wskaznik na strukture do usuniecia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_cleanse_8cpp_aaadb044380c546445dd4ec493b47ea91}\label{_cleanse_8cpp_aaadb044380c546445dd4ec493b47ea91}} 
+\index{Cleanse.\+cpp@{Cleanse.\+cpp}!complexclean@{complexclean}}
+\index{complexclean@{complexclean}!Cleanse.\+cpp@{Cleanse.\+cpp}}
+\subsubsection{\texorpdfstring{complexclean()}{complexclean()}}
+{\footnotesize\ttfamily void complexclean (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{bool}]{pn,  }\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path,  }\item[{bool}]{pt,  }\item[{\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&}]{route,  }\item[{bool}]{rt }\end{DoxyParamCaption})}
+
+
+
+Wywoluje usuwanie podanych struktur dwokrotnie, po strukturze nalezy podac 1/0 lub true false co decyduje o usuwaniu struktury dla true i pominieciu dla false. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Funkcja jest tylko medium do wywolania funkcji czyszczacych poszczegolne struktury. Wywoluje \mbox{\hyperlink{_cleanse_8h_a96321ea503dfbc6d6e0334a26827b1cd}{clean()}}, \mbox{\hyperlink{_cleanse_8h_a9f2cb8120adae944432375eb61963e9f}{cleanroute()}}, \mbox{\hyperlink{_cleanse_8h_ad384ddb2cdc3a29bcb1d701be3a8080c}{cleanpath()}} w zaleznosci od parametrow typu bool. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture lcities \\
+\hline
+{\em pn} & -\/ 1 usun, 0 nie usuwaj \\
+\hline
+{\em path} & -\/ wskaznik na strukture lcities \\
+\hline
+{\em pt} & -\/ 1 usun, 0 nie usuwaj \\
+\hline
+{\em route} & -\/ wskaznik na strukture lcities \\
+\hline
+{\em rt} & -\/ 1 usun, 0 nie usuwaj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}

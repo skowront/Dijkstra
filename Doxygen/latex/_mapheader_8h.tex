@@ -1,0 +1,119 @@
+\hypertarget{_mapheader_8h}{}\section{Dokumentacja pliku Mapheader.\+h}
+\label{_mapheader_8h}\index{Mapheader.\+h@{Mapheader.\+h}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\subsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structlcities}{lcities}}
+\begin{DoxyCompactList}\small\item\em Struktura mapy zlozonej z drog jednokierunkowych. lcities to lista list. Struktura reprezentuje miasto. Miasta tworza liste jednokierunkowa. Kazdemu miastu przypisana jest droga lub lista drog wychodzacych do innych miast. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structlcities_1_1ldist}{lcities\+::ldist}}
+\begin{DoxyCompactList}\small\item\em Struktura dystansow w mapie. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structexistindex}{existindex}}
+\begin{DoxyCompactList}\small\item\em Struktura dla funkcji existroad, z informacjami o (nie)istnieniu miast oraz wskaznikach na nie. Struktura jest uzupelniana funkcja existroad, by stanowic podstawy do uzupelniania listy przy ladowaniu miast lub nie. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structpathtab}{pathtab}}
+\begin{DoxyCompactList}\small\item\em Struktura do podawania wag odleglosciowych i poprawnego wykonania algorytmu Dijkstry, dalej zwana pathtab. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structldirect}{ldirect}}
+\begin{DoxyCompactList}\small\item\em Struktura drogi z A do B. Struktura wskazuje na elementy tablicy pathtab (pathtab), przez ktore nalezy isc aby dotrzec z miasta A do miasta B, a dokladniej z miasta B do miasta A, ~\newline
+ poniewaz funkcje poruszaja sie z vertex do pvertex poczynajac od vertex wskazujacy na miasto B. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Wyliczenia}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}{errorid}} \{ \newline
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba5b9f6d065e6e98483b3d3ed01f4f6cbe}{unknown}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baa571dbf110b667ac320e499b178d1bf7}{maperr}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bae1f35f11866c5e461257155f25f46c34}{wasdiffrentdist}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baf429fc07f67d33a442691074b502c5fa}{noroute}}, 
+\newline
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baed5ef508bbe2f04407f7fbca1be3793c}{earlyhit}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7b1622b1aca67a70b101b21bbb2f1b5a}{maplineerr}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baa5ff38ff1d3b66e09869c228ff96031d}{nominusd}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bafbca77623a6dc5c283a7d58072880227}{nominust}}, 
+\newline
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba214b82ab54718c2293850ea09e53b3f9}{nominuso}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba65f4d53c2adb4053dab6446c74620558}{outferr}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba3ac83dbf895c85e50a37ecfe9a7bf29a}{routeferr}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7ab631021d5783d2710dec81ce5f6909}{no\+TnoO}}, 
+\newline
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bacd6b19c2c8aecd00d8a14cf641c372ef}{donothing}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baeea52e8de3df5d4aa13a3a0f777ac9e2}{nodist}}, 
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7e391f330ef569ed21b5be41d7b26599}{okdist}}
+ \}
+\begin{DoxyCompactList}\small\item\em Wyliczenie wyjatkow programu. Zawiera wszystkie identyfikatory wszystkich wyjatkow, ktore pojawiaja sie w programie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Dokumentacja typów wyliczanych}
+\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}} 
+\index{Mapheader.\+h@{Mapheader.\+h}!errorid@{errorid}}
+\index{errorid@{errorid}!Mapheader.\+h@{Mapheader.\+h}}
+\subsubsection{\texorpdfstring{errorid}{errorid}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}{errorid}}}
+
+
+
+Wyliczenie wyjatkow programu. Zawiera wszystkie identyfikatory wszystkich wyjatkow, ktore pojawiaja sie w programie. 
+
+\begin{DoxyEnumFields}{Wartości wyliczeń}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{unknown@{unknown}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!unknown@{unknown}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba5b9f6d065e6e98483b3d3ed01f4f6cbe}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba5b9f6d065e6e98483b3d3ed01f4f6cbe}} 
+unknown&0 nieznany \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{maperr@{maperr}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!maperr@{maperr}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baa571dbf110b667ac320e499b178d1bf7}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baa571dbf110b667ac320e499b178d1bf7}} 
+maperr&1 blad pliku mapy \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wasdiffrentdist@{wasdiffrentdist}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!wasdiffrentdist@{wasdiffrentdist}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bae1f35f11866c5e461257155f25f46c34}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bae1f35f11866c5e461257155f25f46c34}} 
+wasdiffrentdist&2 blad dystansu do existindex \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{noroute@{noroute}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!noroute@{noroute}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baf429fc07f67d33a442691074b502c5fa}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baf429fc07f67d33a442691074b502c5fa}} 
+noroute&3 nie ma drogi \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{earlyhit@{earlyhit}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!earlyhit@{earlyhit}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baed5ef508bbe2f04407f7fbca1be3793c}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baed5ef508bbe2f04407f7fbca1be3793c}} 
+earlyhit&4 znaleziono trase \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{maplineerr@{maplineerr}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!maplineerr@{maplineerr}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7b1622b1aca67a70b101b21bbb2f1b5a}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7b1622b1aca67a70b101b21bbb2f1b5a}} 
+maplineerr&5 blad linii w mapie \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nominusd@{nominusd}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!nominusd@{nominusd}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baa5ff38ff1d3b66e09869c228ff96031d}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baa5ff38ff1d3b66e09869c228ff96031d}} 
+nominusd&6 brak pliku mapy \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nominust@{nominust}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!nominust@{nominust}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bafbca77623a6dc5c283a7d58072880227}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bafbca77623a6dc5c283a7d58072880227}} 
+nominust&7 brak pliku tras od wyznaczenia \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nominuso@{nominuso}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!nominuso@{nominuso}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba214b82ab54718c2293850ea09e53b3f9}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba214b82ab54718c2293850ea09e53b3f9}} 
+nominuso&8 brak pliku wyjsciowego \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{outferr@{outferr}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!outferr@{outferr}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba65f4d53c2adb4053dab6446c74620558}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba65f4d53c2adb4053dab6446c74620558}} 
+outferr&9 blad pliku wyjsciowego \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{routeferr@{routeferr}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!routeferr@{routeferr}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba3ac83dbf895c85e50a37ecfe9a7bf29a}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba3ac83dbf895c85e50a37ecfe9a7bf29a}} 
+routeferr&10 blad pliku z trasami do wyznaczenia \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{no\+TnoO@{no\+TnoO}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!no\+TnoO@{no\+TnoO}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7ab631021d5783d2710dec81ce5f6909}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7ab631021d5783d2710dec81ce5f6909}} 
+no\+TnoO&11 nie podano ani pliku z trasami, ani wyjsciowego \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{donothing@{donothing}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!donothing@{donothing}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bacd6b19c2c8aecd00d8a14cf641c372ef}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2bacd6b19c2c8aecd00d8a14cf641c372ef}} 
+donothing&12 nie rob nic, koncz program \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{nodist@{nodist}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!nodist@{nodist}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baeea52e8de3df5d4aa13a3a0f777ac9e2}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2baeea52e8de3df5d4aa13a3a0f777ac9e2}} 
+nodist&13 nie ma drogi do existindex \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{okdist@{okdist}!Mapheader.\+h@{Mapheader.\+h}}\index{Mapheader.\+h@{Mapheader.\+h}!okdist@{okdist}}}\mbox{\Hypertarget{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7e391f330ef569ed21b5be41d7b26599}\label{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2ba7e391f330ef569ed21b5be41d7b26599}} 
+okdist&14 droga jest taka sama jak podana \\
+\hline
+
+\end{DoxyEnumFields}

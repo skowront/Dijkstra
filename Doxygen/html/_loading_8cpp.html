@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mapa: Dokumentacja pliku Loading.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mapa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4c8cf85762cb1998d0c18f88ec599217.html">projekt-02</a></li><li class="navelem"><a class="el" href="dir_08c86b01266eff09fc34d82bace979b5.html">Mapa</a></li><li class="navelem"><a class="el" href="dir_bb1f29e49c897877093dbdc54e3da301.html">Mapav1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku Loading.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Plik zawiera funkcje uzytkowe do dzialan na liscie pName, z naciskiem na stworzenie struktury mapy na podstawie danych z pliku wejsciowego.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_mapheader_8h_source.html">Mapheader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_valid_8h_source.html">Valid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_service_8h_source.html">Service.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_cleanse_8h_source.html">Cleanse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pathfinding_8h_source.html">pathfinding.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_loading_8h_source.html">Loading.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:aff8901c9db5268281427c926821ff150"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structexistindex.html">existindex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_loading_8cpp.html#aff8901c9db5268281427c926821ff150">existroad</a> (<a class="el" href="structlcities.html">lcities</a> *&amp;pName, const string &amp;cityA, double distance, const string &amp;cityB)</td></tr>
+<tr class="memdesc:aff8901c9db5268281427c926821ff150"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odnajduje miasta i zwraca strukture existindex ze wskaznikami na szukane elementy o ile istnialy.  <a href="#aff8901c9db5268281427c926821ff150">Więcej...</a><br /></td></tr>
+<tr class="separator:aff8901c9db5268281427c926821ff150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84909d1116494d004bf82e6ae22815e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_loading_8cpp.html#a84909d1116494d004bf82e6ae22815e6">addcity</a> (<a class="el" href="structlcities.html">lcities</a> *&amp;pName, const string &amp;cityA)</td></tr>
+<tr class="memdesc:a84909d1116494d004bf82e6ae22815e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodaje nowe miasto do struktury mapy, tzn lcities.  <a href="#a84909d1116494d004bf82e6ae22815e6">Więcej...</a><br /></td></tr>
+<tr class="separator:a84909d1116494d004bf82e6ae22815e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a1efc8db71a7770b302ace70766cea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_loading_8cpp.html#a74a1efc8db71a7770b302ace70766cea">addroad</a> (<a class="el" href="structlcities.html">lcities</a> *&amp;pName, double dist, <a class="el" href="structexistindex.html">existindex</a> &amp;cityloc)</td></tr>
+<tr class="memdesc:a74a1efc8db71a7770b302ace70766cea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodaje droge, tzn dystans miedzy miastami A B. Funkcja wymaga podania struktury existindex by uproscic proces poszukuwania wskaznikow na odpowiednie miasta, te zas sa dodawane do struktury existindex przez funkcje existroad.  <a href="#a74a1efc8db71a7770b302ace70766cea">Więcej...</a><br /></td></tr>
+<tr class="separator:a74a1efc8db71a7770b302ace70766cea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a896eb1f49c1cd134dcc571ed4ead25a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_loading_8cpp.html#a896eb1f49c1cd134dcc571ed4ead25a1">loadroad</a> (<a class="el" href="structlcities.html">lcities</a> *&amp;pName, const string &amp;infilename)</td></tr>
+<tr class="memdesc:a896eb1f49c1cd134dcc571ed4ead25a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja jest medium do tworzenia struktury mapy. Funkcja pobiera linie z pliku i sprawdzajac ich poprawnosc tworzy strukture mapy.  <a href="#a896eb1f49c1cd134dcc571ed4ead25a1">Więcej...</a><br /></td></tr>
+<tr class="separator:a896eb1f49c1cd134dcc571ed4ead25a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Plik zawiera funkcje uzytkowe do dzialan na liscie pName, z naciskiem na stworzenie struktury mapy na podstawie danych z pliku wejsciowego. </p>
+<dl class="section author"><dt>Autor</dt><dd>Tomasz Skowron </dd></dl>
+<dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="_loading_8cpp.html" title="Plik zawiera funkcje uzytkowe do dzialan na liscie pName, z naciskiem na stworzenie struktury mapy na...">Loading.cpp</a> </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a84909d1116494d004bf82e6ae22815e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84909d1116494d004bf82e6ae22815e6">&#9670;&nbsp;</a></span>addcity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addcity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja dodaje nowe miasto do struktury mapy, tzn lcities. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Funkcja nie sprawdza czy miasto istnieje i dla stabilnosci oraz poprawnosci dzialania programu powinno nie istniec w strukturze. </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+    <tr><td class="paramname">cityA</td><td>- nazwa miasta A </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a74a1efc8db71a7770b302ace70766cea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a1efc8db71a7770b302ace70766cea">&#9670;&nbsp;</a></span>addroad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addroad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structexistindex.html">existindex</a> &amp;&#160;</td>
+          <td class="paramname"><em>cityloc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja dodaje droge, tzn dystans miedzy miastami A B. Funkcja wymaga podania struktury existindex by uproscic proces poszukuwania wskaznikow na odpowiednie miasta, te zas sa dodawane do struktury existindex przez funkcje existroad. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Funkcja nie sprawdza czy miasta istnialy, ani czy drogi istnialy i dla stabilnosci oraz poprawnosci dzialania programu musza one istniec. </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+    <tr><td class="paramname">dist</td><td>- dystans do dodania </td></tr>
+    <tr><td class="paramname">cityloc</td><td>- struktura zawierajaca wskazniki na miasta, miedzy ktorymi wystepuje dystans </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aff8901c9db5268281427c926821ff150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8901c9db5268281427c926821ff150">&#9670;&nbsp;</a></span>existroad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structexistindex.html">existindex</a> existroad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>distance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityB</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odnajduje miasta i zwraca strukture existindex ze wskaznikami na szukane elementy o ile istnialy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+    <tr><td class="paramname">cityA</td><td>- nazwa miasta A </td></tr>
+    <tr><td class="paramname">distance</td><td>- dystans miedzy miastami </td></tr>
+    <tr><td class="paramname">cityB</td><td>- nazwa miasta B </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>existindex - struktura z informacjami o informacjach ktore sa juz w strukturze,i ktorych nie ma </dd></dl>
+<dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="structexistindex.html" title="Struktura dla funkcji existroad, z informacjami o (nie)istnieniu miast oraz wskaznikach na nie...">existindex</a> </dd></dl>
+
+</div>
+</div>
+<a id="a896eb1f49c1cd134dcc571ed4ead25a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a896eb1f49c1cd134dcc571ed4ead25a1">&#9670;&nbsp;</a></span>loadroad()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadroad </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>infilename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja jest medium do tworzenia struktury mapy. Funkcja pobiera linie z pliku i sprawdzajac ich poprawnosc tworzy strukture mapy. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+    <tr><td class="paramname">infilename</td><td>- sciezka do pliku wejsciowego z danymi do mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">nominusd</td><td>-throw, gdy byl blad pliku wejsciowego </td></tr>
+    <tr><td class="paramname">maplineerr</td><td>- blad w linii w pliku </td></tr>
+    <tr><td class="paramname">wasdiffrentdist</td><td>- byl juz podany inny dystans </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

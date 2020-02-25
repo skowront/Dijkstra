@@ -1,0 +1,52 @@
+\hypertarget{_mapa_8cpp}{}\section{Dokumentacja pliku Mapa.\+cpp}
+\label{_mapa_8cpp}\index{Mapa.\+cpp@{Mapa.\+cpp}}
+{\ttfamily \#include \char`\"{}Mapheader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Valid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Service.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cleanse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pathfinding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Loading.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}{main}} (int paramixmax, char $\ast$params\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Glowna funkcja programu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Plik z glowna funkcja programu \mbox{\hyperlink{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}{main()}}. \begin{DoxyAuthor}{Autor}
+Tomasz Skowron 
+\end{DoxyAuthor}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}\label{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}} 
+\index{Mapa.\+cpp@{Mapa.\+cpp}!main@{main}}
+\index{main@{main}!Mapa.\+cpp@{Mapa.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{paramixmax,  }\item[{char $\ast$}]{params\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Glowna funkcja programu. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+W programie przyjeto nazwe mapa dla struktury z miastami i drogami, nie jest to tablica asocjacyjna. Funkcja wywoluje obsluge parametrow. Funkcja wywola w odpowiedni sposob funkcje core, zastepujac brakujace parametry standardowymi wyjsciami. Zostanie rowniez wywolane ladowanie struktury mapy z pliku. 
+
+funkcja moze zglosic wyjatek, ale zostanie on obsluzony w bloku catch na koncu \mbox{\hyperlink{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}{main()}}, ~\newline
+ funkcja wylapuje rowniez wszystkie wyjatki spadajace do niej z podfunkcji. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em paramixmax} & -\/zmienna z iloscia parametrow \\
+\hline
+{\em params} & -\/tablica parametrow \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+0 
+\end{DoxyReturn}

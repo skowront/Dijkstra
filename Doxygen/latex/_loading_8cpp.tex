@@ -1,0 +1,142 @@
+\hypertarget{_loading_8cpp}{}\section{Dokumentacja pliku Loading.\+cpp}
+\label{_loading_8cpp}\index{Loading.\+cpp@{Loading.\+cpp}}
+
+
+Plik zawiera funkcje uzytkowe do dzialan na liscie p\+Name, z naciskiem na stworzenie struktury mapy na podstawie danych z pliku wejsciowego.  
+
+
+{\ttfamily \#include \char`\"{}Mapheader.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Valid.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Service.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Cleanse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pathfinding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Loading.\+h\char`\"{}}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structexistindex}{existindex}} \mbox{\hyperlink{_loading_8cpp_aff8901c9db5268281427c926821ff150}{existroad}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, const string \&cityA, double distance, const string \&cityB)
+\begin{DoxyCompactList}\small\item\em Funkcja odnajduje miasta i zwraca strukture existindex ze wskaznikami na szukane elementy o ile istnialy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_loading_8cpp_a84909d1116494d004bf82e6ae22815e6}{addcity}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, const string \&cityA)
+\begin{DoxyCompactList}\small\item\em Funkcja dodaje nowe miasto do struktury mapy, tzn lcities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_loading_8cpp_a74a1efc8db71a7770b302ace70766cea}{addroad}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, double dist, \mbox{\hyperlink{structexistindex}{existindex}} \&cityloc)
+\begin{DoxyCompactList}\small\item\em Funkcja dodaje droge, tzn dystans miedzy miastami A B. Funkcja wymaga podania struktury existindex by uproscic proces poszukuwania wskaznikow na odpowiednie miasta, te zas sa dodawane do struktury existindex przez funkcje existroad. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_loading_8cpp_a896eb1f49c1cd134dcc571ed4ead25a1}{loadroad}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, const string \&infilename)
+\begin{DoxyCompactList}\small\item\em Funkcja jest medium do tworzenia struktury mapy. Funkcja pobiera linie z pliku i sprawdzajac ich poprawnosc tworzy strukture mapy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Plik zawiera funkcje uzytkowe do dzialan na liscie p\+Name, z naciskiem na stworzenie struktury mapy na podstawie danych z pliku wejsciowego. 
+
+\begin{DoxyAuthor}{Autor}
+Tomasz Skowron 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{_loading_8cpp}{Loading.\+cpp}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_loading_8cpp_a84909d1116494d004bf82e6ae22815e6}\label{_loading_8cpp_a84909d1116494d004bf82e6ae22815e6}} 
+\index{Loading.\+cpp@{Loading.\+cpp}!addcity@{addcity}}
+\index{addcity@{addcity}!Loading.\+cpp@{Loading.\+cpp}}
+\subsubsection{\texorpdfstring{addcity()}{addcity()}}
+{\footnotesize\ttfamily void addcity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{const string \&}]{cityA }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodaje nowe miasto do struktury mapy, tzn lcities. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Funkcja nie sprawdza czy miasto istnieje i dla stabilnosci oraz poprawnosci dzialania programu powinno nie istniec w strukturze. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+{\em cityA} & -\/ nazwa miasta A \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_loading_8cpp_a74a1efc8db71a7770b302ace70766cea}\label{_loading_8cpp_a74a1efc8db71a7770b302ace70766cea}} 
+\index{Loading.\+cpp@{Loading.\+cpp}!addroad@{addroad}}
+\index{addroad@{addroad}!Loading.\+cpp@{Loading.\+cpp}}
+\subsubsection{\texorpdfstring{addroad()}{addroad()}}
+{\footnotesize\ttfamily void addroad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{double}]{dist,  }\item[{\mbox{\hyperlink{structexistindex}{existindex}} \&}]{cityloc }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodaje droge, tzn dystans miedzy miastami A B. Funkcja wymaga podania struktury existindex by uproscic proces poszukuwania wskaznikow na odpowiednie miasta, te zas sa dodawane do struktury existindex przez funkcje existroad. 
+
+\begin{DoxyWarning}{Ostrzeżenie}
+Funkcja nie sprawdza czy miasta istnialy, ani czy drogi istnialy i dla stabilnosci oraz poprawnosci dzialania programu musza one istniec. 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+{\em dist} & -\/ dystans do dodania \\
+\hline
+{\em cityloc} & -\/ struktura zawierajaca wskazniki na miasta, miedzy ktorymi wystepuje dystans \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_loading_8cpp_aff8901c9db5268281427c926821ff150}\label{_loading_8cpp_aff8901c9db5268281427c926821ff150}} 
+\index{Loading.\+cpp@{Loading.\+cpp}!existroad@{existroad}}
+\index{existroad@{existroad}!Loading.\+cpp@{Loading.\+cpp}}
+\subsubsection{\texorpdfstring{existroad()}{existroad()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structexistindex}{existindex}} existroad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{const string \&}]{cityA,  }\item[{double}]{distance,  }\item[{const string \&}]{cityB }\end{DoxyParamCaption})}
+
+
+
+Funkcja odnajduje miasta i zwraca strukture existindex ze wskaznikami na szukane elementy o ile istnialy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+{\em cityA} & -\/ nazwa miasta A \\
+\hline
+{\em distance} & -\/ dystans miedzy miastami \\
+\hline
+{\em cityB} & -\/ nazwa miasta B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+existindex -\/ struktura z informacjami o informacjach ktore sa juz w strukturze,i ktorych nie ma 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{structexistindex}{existindex}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_loading_8cpp_a896eb1f49c1cd134dcc571ed4ead25a1}\label{_loading_8cpp_a896eb1f49c1cd134dcc571ed4ead25a1}} 
+\index{Loading.\+cpp@{Loading.\+cpp}!loadroad@{loadroad}}
+\index{loadroad@{loadroad}!Loading.\+cpp@{Loading.\+cpp}}
+\subsubsection{\texorpdfstring{loadroad()}{loadroad()}}
+{\footnotesize\ttfamily void loadroad (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{const string \&}]{infilename }\end{DoxyParamCaption})}
+
+
+
+Funkcja jest medium do tworzenia struktury mapy. Funkcja pobiera linie z pliku i sprawdzajac ich poprawnosc tworzy strukture mapy. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+{\em infilename} & -\/ sciezka do pliku wejsciowego z danymi do mapy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em nominusd} & -\/throw, gdy byl blad pliku wejsciowego \\
+\hline
+{\em maplineerr} & -\/ blad w linii w pliku \\
+\hline
+{\em wasdiffrentdist} & -\/ byl juz podany inny dystans \\
+\hline
+\end{DoxyExceptions}

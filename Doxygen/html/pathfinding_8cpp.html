@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mapa: Dokumentacja pliku pathfinding.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mapa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4c8cf85762cb1998d0c18f88ec599217.html">projekt-02</a></li><li class="navelem"><a class="el" href="dir_08c86b01266eff09fc34d82bace979b5.html">Mapa</a></li><li class="navelem"><a class="el" href="dir_bb1f29e49c897877093dbdc54e3da301.html">Mapav1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku pathfinding.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Plik zawiera funkcje kluczowe do wykonania algorytmu Dijkstry i znalezienia o ile istnieje drogi z A do B.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_mapheader_8h_source.html">Mapheader.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_valid_8h_source.html">Valid.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_service_8h_source.html">Service.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_cleanse_8h_source.html">Cleanse.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="pathfinding_8h_source.html">pathfinding.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_loading_8h_source.html">Loading.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:aaf58cc999efce529686df35590843cb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpathtab.html">pathtab</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#aaf58cc999efce529686df35590843cb4">initialize</a> (<a class="el" href="structlcities.html">lcities</a> *&amp;pName, <a class="el" href="structpathtab.html">pathtab</a> *&amp;path)</td></tr>
+<tr class="memdesc:aaf58cc999efce529686df35590843cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja inicjalizuje liste (tablice) pathtab na podstawie wierzcholkow struktuy mapy.  <a href="#aaf58cc999efce529686df35590843cb4">Więcej...</a><br /></td></tr>
+<tr class="separator:aaf58cc999efce529686df35590843cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f2522769dfcd2ad25c3fc4ff40d7a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpathtab.html">pathtab</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#ad0f2522769dfcd2ad25c3fc4ff40d7a0">findinpath</a> (<a class="el" href="structpathtab.html">pathtab</a> *&amp;path, const string &amp;cityA)</td></tr>
+<tr class="memdesc:ad0f2522769dfcd2ad25c3fc4ff40d7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odnajduje i zwraca wskaznik na element z tablicy pathtab, ktory wskazuje na miasto o zadanej nazwie.  <a href="#ad0f2522769dfcd2ad25c3fc4ff40d7a0">Więcej...</a><br /></td></tr>
+<tr class="separator:ad0f2522769dfcd2ad25c3fc4ff40d7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a774a99c936f377872d3bdf11afdefe73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structlcities.html">lcities</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a774a99c936f377872d3bdf11afdefe73">findiname</a> (<a class="el" href="structlcities.html">lcities</a> *&amp;pName, const string &amp;cityA)</td></tr>
+<tr class="memdesc:a774a99c936f377872d3bdf11afdefe73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odnajduje i zwraca wskaznik na element ze struktury mapy, ktory wskazuje na miasto o zadanej nazwie.  <a href="#a774a99c936f377872d3bdf11afdefe73">Więcej...</a><br /></td></tr>
+<tr class="separator:a774a99c936f377872d3bdf11afdefe73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47b47a6c5e72861b2282d1c41e8857af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpathtab.html">pathtab</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a47b47a6c5e72861b2282d1c41e8857af">findmin</a> (<a class="el" href="structpathtab.html">pathtab</a> *&amp;path, const string &amp;cityA)</td></tr>
+<tr class="memdesc:a47b47a6c5e72861b2282d1c41e8857af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja znajduje w tablicy pathtab wskaznik na minimalna wartosc wiercholka, co jest jednym z kloczowych krokow algorytmu Dijksty.  <a href="#a47b47a6c5e72861b2282d1c41e8857af">Więcej...</a><br /></td></tr>
+<tr class="separator:a47b47a6c5e72861b2282d1c41e8857af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ebae8688c8c09394a2b5012111b915"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a08ebae8688c8c09394a2b5012111b915">allvisited</a> (<a class="el" href="structpathtab.html">pathtab</a> *&amp;path, const string &amp;cityA)</td></tr>
+<tr class="memdesc:a08ebae8688c8c09394a2b5012111b915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdza czy jest istniejacy elemeny tablicy pathtab, ktory nie byl nigdy odwiedzony.  <a href="#a08ebae8688c8c09394a2b5012111b915">Więcej...</a><br /></td></tr>
+<tr class="separator:a08ebae8688c8c09394a2b5012111b915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7254849f1ab5e9b3fb4c4b9604d857"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpathtab.html">pathtab</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a9d7254849f1ab5e9b3fb4c4b9604d857">findshortAB</a> (<a class="el" href="structlcities.html">lcities</a> *&amp;pName, const string &amp;cityA, const string cityB, <a class="el" href="structpathtab.html">pathtab</a> *&amp;path)</td></tr>
+<tr class="memdesc:a9d7254849f1ab5e9b3fb4c4b9604d857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypelnia tablice pathtab wagami odleglosci punktu B od A.  <a href="#a9d7254849f1ab5e9b3fb4c4b9604d857">Więcej...</a><br /></td></tr>
+<tr class="separator:a9d7254849f1ab5e9b3fb4c4b9604d857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7daa50c095f49103e1054ebf15b86f3a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a7daa50c095f49103e1054ebf15b86f3a">existV</a> (<a class="el" href="structldirect.html">ldirect</a> *&amp;pVisited, const string &amp;city)</td></tr>
+<tr class="memdesc:a7daa50c095f49103e1054ebf15b86f3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy w strukturze ldirect istnieje element wskazujacy na miasto o zadanej nazwie.  <a href="#a7daa50c095f49103e1054ebf15b86f3a">Więcej...</a><br /></td></tr>
+<tr class="separator:a7daa50c095f49103e1054ebf15b86f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc65dbbb5a3872aa33370ba1e467e6ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#adc65dbbb5a3872aa33370ba1e467e6ad">existroadAtoB</a> (const string &amp;cityA, const string &amp;cityB, <a class="el" href="structlcities.html">lcities</a> *&amp;pName)</td></tr>
+<tr class="memdesc:adc65dbbb5a3872aa33370ba1e467e6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy w strukturze mapy wystepuje droga z A do B. Ta funkcja rozni sie od existroad, gdyz sprawdza wylacznie istnienie i nie zwraca gdzie wystapily. <br />
+ Stworzone dla funkcji <a class="el" href="pathfinding_8h.html#a78196ea5104d95e0a42d7c43f2374443" title="Sprawdza czy drogi miedzy wierzcholkami (vertex), a poprzednimi wierzcholkami (pvertex) w strukturze ...">allroadexist()</a>.  <a href="#adc65dbbb5a3872aa33370ba1e467e6ad">Więcej...</a><br /></td></tr>
+<tr class="separator:adc65dbbb5a3872aa33370ba1e467e6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78196ea5104d95e0a42d7c43f2374443"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a78196ea5104d95e0a42d7c43f2374443">allroadexist</a> (<a class="el" href="structldirect.html">ldirect</a> *&amp;pVisited, <a class="el" href="structlcities.html">lcities</a> *&amp;pName, const string &amp;startcity)</td></tr>
+<tr class="memdesc:a78196ea5104d95e0a42d7c43f2374443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza czy drogi miedzy wierzcholkami (vertex), a poprzednimi wierzcholkami (pvertex) w strukturze ldirect istnieja w strukturze mapy.  <a href="#a78196ea5104d95e0a42d7c43f2374443">Więcej...</a><br /></td></tr>
+<tr class="separator:a78196ea5104d95e0a42d7c43f2374443"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a1031f4deb5f0dda055350bbdf3f33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structldirect.html">ldirect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a19a1031f4deb5f0dda055350bbdf3f33">interpret</a> (<a class="el" href="structpathtab.html">pathtab</a> *&amp;path, const string &amp;cityA, const string &amp;cityB, <a class="el" href="structlcities.html">lcities</a> *&amp;pName)</td></tr>
+<tr class="memdesc:a19a1031f4deb5f0dda055350bbdf3f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypelnia strukture ldirect trasami a punktu A do B na podstawie wartosci vertex i pvertex z tablicy pathtab.  <a href="#a19a1031f4deb5f0dda055350bbdf3f33">Więcej...</a><br /></td></tr>
+<tr class="separator:a19a1031f4deb5f0dda055350bbdf3f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25ca32e0109afa314f7a0159e9a0bd41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structldirect.html">ldirect</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a25ca32e0109afa314f7a0159e9a0bd41">findinvisited</a> (<a class="el" href="structldirect.html">ldirect</a> *&amp;pVisited, const string &amp;city)</td></tr>
+<tr class="memdesc:a25ca32e0109afa314f7a0159e9a0bd41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Odnajduje w strukturze ldirect element o zadanej nazwie.  <a href="#a25ca32e0109afa314f7a0159e9a0bd41">Więcej...</a><br /></td></tr>
+<tr class="separator:a25ca32e0109afa314f7a0159e9a0bd41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4dc9179dbf59355efce07448be105d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a1b4dc9179dbf59355efce07448be105d">writeroute</a> (<a class="el" href="structldirect.html">ldirect</a> *&amp;route, ostream &amp;stream)</td></tr>
+<tr class="memdesc:a1b4dc9179dbf59355efce07448be105d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypisuje do zadanego strumienia droge z A do B.  <a href="#a1b4dc9179dbf59355efce07448be105d">Więcej...</a><br /></td></tr>
+<tr class="separator:a1b4dc9179dbf59355efce07448be105d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a402a1a8e01638b441e89c851620eba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a3a402a1a8e01638b441e89c851620eba">weightless</a> (<a class="el" href="structldirect.html">ldirect</a> *&amp;route, const string &amp;endcity, const string &amp;startcity)</td></tr>
+<tr class="memdesc:a3a402a1a8e01638b441e89c851620eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja przywroci dystanse z |X-Y| usuwajac odleglosc |A-X|, powstale w wyniku algorytmu Dijkstry.  <a href="#a3a402a1a8e01638b441e89c851620eba">Więcej...</a><br /></td></tr>
+<tr class="separator:a3a402a1a8e01638b441e89c851620eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ccff7ae4c9aed242437bd09b199716"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pathfinding_8cpp.html#a74ccff7ae4c9aed242437bd09b199716">getweight</a> (<a class="el" href="structpathtab.html">pathtab</a> *&amp;path, const string &amp;city)</td></tr>
+<tr class="memdesc:a74ccff7ae4c9aed242437bd09b199716"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja zbiera wage nadana przez findshortAB do sdist w elemencie wskazujacym na szukana nazwe miasta.  <a href="#a74ccff7ae4c9aed242437bd09b199716">Więcej...</a><br /></td></tr>
+<tr class="separator:a74ccff7ae4c9aed242437bd09b199716"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Plik zawiera funkcje kluczowe do wykonania algorytmu Dijkstry i znalezienia o ile istnieje drogi z A do B. </p>
+<dl class="section author"><dt>Autor</dt><dd>Tomasz Skowron </dd></dl>
+<dl class="section see"><dt>Zobacz również</dt><dd><a class="el" href="pathfinding_8cpp.html" title="Plik zawiera funkcje kluczowe do wykonania algorytmu Dijkstry i znalezienia o ile istnieje drogi z A ...">pathfinding.cpp</a> </dd></dl>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a78196ea5104d95e0a42d7c43f2374443"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78196ea5104d95e0a42d7c43f2374443">&#9670;&nbsp;</a></span>allroadexist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool allroadexist </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structldirect.html">ldirect</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pVisited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>startcity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy drogi miedzy wierzcholkami (vertex), a poprzednimi wierzcholkami (pvertex) w strukturze ldirect istnieja w strukturze mapy. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Wystarcza jedna nie isniejaca droga by zwrocono false. </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pVisited</td><td>- wskaznik na strukture trasy </td></tr>
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+    <tr><td class="paramname">startcity</td><td>- wskaznik na miasto poczatkowe, z ktorego droge szukamy. Pozwala na wczesniejsze przerwanie zakonczenia dzialania funkcji. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true - gdy istnieja wszystkie drogi </dd>
+<dd>
+false - gdy nie istnieje conajmniej jedno z miast na trasie </dd></dl>
+
+</div>
+</div>
+<a id="a08ebae8688c8c09394a2b5012111b915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ebae8688c8c09394a2b5012111b915">&#9670;&nbsp;</a></span>allvisited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool allvisited </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpathtab.html">pathtab</a> *&amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdza czy jest istniejacy elemeny tablicy pathtab, ktory nie byl nigdy odwiedzony. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>- wskaznik na tablice pathtab </td></tr>
+    <tr><td class="paramname">cityA</td><td>- nazwa miasta do ignorowania (wynika to z algorytmu Dijkstry, gdzie do miasta pczatkowego nie wracamy), a swoja droga w prawie wszystkich przypadkach to miasto jest juz odwiedzone. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>element - wskaznik na szukany element mapy </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">noroute</td><td>- gdy nie odnaleziono elementu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adc65dbbb5a3872aa33370ba1e467e6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc65dbbb5a3872aa33370ba1e467e6ad">&#9670;&nbsp;</a></span>existroadAtoB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool existroadAtoB </td>
+          <td>(</td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy w strukturze mapy wystepuje droga z A do B. Ta funkcja rozni sie od existroad, gdyz sprawdza wylacznie istnienie i nie zwraca gdzie wystapily. <br />
+ Stworzone dla funkcji <a class="el" href="pathfinding_8h.html#a78196ea5104d95e0a42d7c43f2374443" title="Sprawdza czy drogi miedzy wierzcholkami (vertex), a poprzednimi wierzcholkami (pvertex) w strukturze ...">allroadexist()</a>. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cityA</td><td>- nazwa szukanego miasta A </td></tr>
+    <tr><td class="paramname">cityB</td><td>- nazwa szukanego miasta B </td></tr>
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true - gdy istnieja oba </dd>
+<dd>
+false - gdy nie istnieje conajmniej jedno z miast </dd></dl>
+
+</div>
+</div>
+<a id="a7daa50c095f49103e1054ebf15b86f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7daa50c095f49103e1054ebf15b86f3a">&#9670;&nbsp;</a></span>existV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool existV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structldirect.html">ldirect</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pVisited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>city</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza czy w strukturze ldirect istnieje element wskazujacy na miasto o zadanej nazwie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pVisited</td><td>- wskaznik na strukture ldirect </td></tr>
+    <tr><td class="paramname">city</td><td>- nazwa szukanego miasta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>true - gdy istnieje </dd>
+<dd>
+false - gdy nie istnieje </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">earlyhit</td><td>- gdy droga moze byc znaleziona wczesniej </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a774a99c936f377872d3bdf11afdefe73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a774a99c936f377872d3bdf11afdefe73">&#9670;&nbsp;</a></span>findiname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structlcities.html">lcities</a>* findiname </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odnajduje i zwraca wskaznik na element ze struktury mapy, ktory wskazuje na miasto o zadanej nazwie. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Funkcja moze zglosic wyjatek noroute, gdyz jesli szukamy jakiejs drogi, a miasto nie isnieje to nie mozna kontynuowac poszukiwan. findinpath jest zatem niemal bezuzyteczna poza <a class="el" href="pathfinding_8h.html#a9d7254849f1ab5e9b3fb4c4b9604d857" title="Funkcja wypelnia tablice pathtab wagami odleglosci punktu B od A. ">findshortAB()</a>. </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>- wskaznik na tablice pathtab </td></tr>
+    <tr><td class="paramname">cityA</td><td>- nazwa szukanego miasta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>element - wskaznik na szukany element mapy </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">noroute</td><td>- gdy nie odnaleziono elementu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad0f2522769dfcd2ad25c3fc4ff40d7a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0f2522769dfcd2ad25c3fc4ff40d7a0">&#9670;&nbsp;</a></span>findinpath()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpathtab.html">pathtab</a>* findinpath </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpathtab.html">pathtab</a> *&amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odnajduje i zwraca wskaznik na element z tablicy pathtab, ktory wskazuje na miasto o zadanej nazwie. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Nie wolno szukac elementow ktore nie istnieja, szczegolnie jesli wywolujemy to z funkcji <a class="el" href="pathfinding_8h.html#a9d7254849f1ab5e9b3fb4c4b9604d857" title="Funkcja wypelnia tablice pathtab wagami odleglosci punktu B od A. ">findshortAB()</a>. </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>- wskaznik na tablice pathtab </td></tr>
+    <tr><td class="paramname">cityA</td><td>- nazwa szukanego miasta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>element - wskaznik na szukany element tablicy pathtab </dd>
+<dd>
+nullptr - gdy nie odnaleziono elementu </dd></dl>
+
+</div>
+</div>
+<a id="a25ca32e0109afa314f7a0159e9a0bd41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25ca32e0109afa314f7a0159e9a0bd41">&#9670;&nbsp;</a></span>findinvisited()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structldirect.html">ldirect</a>* findinvisited </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structldirect.html">ldirect</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pVisited</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>city</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Odnajduje w strukturze ldirect element o zadanej nazwie. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Funkcja nie wypisuje dystansu z A do B, tylko poszczegolne dystanse z tablicy pathtab. Poleca sie uzycie weightless na tablicy pathtab by otrzymac poprawne dane, z |X-Y|, a nie |A-X|+|X-Y|. </dd></dl>
+<dl class="section see"><dt>Zobacz również</dt><dd>wieghtless </dd>
+<dd>
+<a class="el" href="pathfinding_8h.html#a9d7254849f1ab5e9b3fb4c4b9604d857" title="Funkcja wypelnia tablice pathtab wagami odleglosci punktu B od A. ">findshortAB</a> </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pVisited</td><td>- wskaznik na strukture trasy z A do B </td></tr>
+    <tr><td class="paramname">city</td><td>- nazwa szukanego miasta </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>pHeadV - wskaznik na szukany element </dd>
+<dd>
+nullptr - gdy miasto nie istnieje w strukturze </dd></dl>
+
+</div>
+</div>
+<a id="a47b47a6c5e72861b2282d1c41e8857af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47b47a6c5e72861b2282d1c41e8857af">&#9670;&nbsp;</a></span>findmin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpathtab.html">pathtab</a>* findmin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpathtab.html">pathtab</a> *&amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja znajduje w tablicy pathtab wskaznik na minimalna wartosc wiercholka, co jest jednym z kloczowych krokow algorytmu Dijksty. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Minimimum moze okazac sie nieskonczonoscia, czyli 0. Funkcja pomija miasto A oraz miasta odwiedzone, wiec jesli wszystkie byly odwiedzone to zwroci wartosc poczatku tablicy pathtab. <br />
+ Findmin porownoje wagi (value, czyli sdist), a nie dystanse ze struktury mapy! </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>- wskaznik na pathtab </td></tr>
+    <tr><td class="paramname">cityA</td><td>- nazwa miasta do ignorowania (wynika to z algorytmu Dijkstry, gdzie do miasta pczatkowego nie wracamy) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>min - wskaznik na minimalny pod wzgledem sdist i zgodny z algorytmem element tablicy pathtab </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">noroute</td><td>gdy miasto nie istnieje </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d7254849f1ab5e9b3fb4c4b9604d857"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7254849f1ab5e9b3fb4c4b9604d857">&#9670;&nbsp;</a></span>findshortAB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpathtab.html">pathtab</a> findshortAB </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string&#160;</td>
+          <td class="paramname"><em>cityB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpathtab.html">pathtab</a> *&amp;&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wypelnia tablice pathtab wagami odleglosci punktu B od A. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Wagi nie sa rownie odleglosciom |X-Y|, tylko |A-X|+|X-Y|. Aby miec w tablicy odleglosci miedzy poszczegolnymi wierzcholkami nalezy ja podac funkcji <a class="el" href="pathfinding_8h.html#a3a402a1a8e01638b441e89c851620eba" title="Funkcja przywroci dystanse z |X-Y| usuwajac odleglosc |A-X|, powstale w wyniku algorytmu Dijkstry...">weightless()</a> </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+    <tr><td class="paramname">cityA</td><td>- nazwa miasta A </td></tr>
+    <tr><td class="paramname">cityB</td><td>- nazwa miasta B </td></tr>
+    <tr><td class="paramname">path</td><td>- wkaznik na tablice pathtab </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>path - uzupelniona wagami tablica pathtab </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">earlyhit</td><td>- jesli droga zostala znaleziona wczesniej, niz odwiedzenie wszystkich miast przez Dijkstre </td></tr>
+    <tr><td class="paramname">noroute</td><td>- jesli nie istnieje zadna droga z miata A </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Mozna sobie pozwolic na earlyhit, nawet w strukturze mapy rozdzielnej, gdzie nie kazda droge mozna osiagnac, <br />
+ gdyz przejscie do nieosiagalnej czesci mapy jest ostatecznocia ograniczana przez findmin, a jesli tak sie stalo to alloradexist ponownie zabezpiecza niepoprawny wynik. </dd></dl>
+
+</div>
+</div>
+<a id="a74ccff7ae4c9aed242437bd09b199716"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74ccff7ae4c9aed242437bd09b199716">&#9670;&nbsp;</a></span>getweight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double getweight </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpathtab.html">pathtab</a> *&amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>city</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja zbiera wage nadana przez findshortAB do sdist w elemencie wskazujacym na szukana nazwe miasta. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Szczegolnie dobym uzyciem tej funkcji jest zebranie odleglosci z A do B przez uzyciem weightless na tablicy pathtab, daje to gotowa sume dystansow. <br />
+ Droga z A do B musi istniec. </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>- wskaznik na tablice pathtab </td></tr>
+    <tr><td class="paramname">city</td><td>- nazwa miasta o szukanej wadze </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>value - waga odleglosci </dd>
+<dd>
+0 - gdy waga jest nie mozliwa do odnalezienia </dd></dl>
+
+</div>
+</div>
+<a id="aaf58cc999efce529686df35590843cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf58cc999efce529686df35590843cb4">&#9670;&nbsp;</a></span>initialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structpathtab.html">pathtab</a>* initialize </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structpathtab.html">pathtab</a> *&amp;&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja inicjalizuje liste (tablice) pathtab na podstawie wierzcholkow struktuy mapy. </p>
+<dl class="section warning"><dt>Ostrzeżenie</dt><dd>Wartosci domyslne elelentow listy to: new pathtab{ pHeadN,0,nullptr,false,nullptr } </dd></dl>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+    <tr><td class="paramname">path</td><td>- wskaznik na pathtab do utworzenia </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>path - wskaznik na zainicjalizowana tablice </dd>
+<dd>
+nullptr -jesli pName bylo puste </dd></dl>
+
+</div>
+</div>
+<a id="a19a1031f4deb5f0dda055350bbdf3f33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a1031f4deb5f0dda055350bbdf3f33">&#9670;&nbsp;</a></span>interpret()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structldirect.html">ldirect</a>* interpret </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpathtab.html">pathtab</a> *&amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>cityB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structlcities.html">lcities</a> *&amp;&#160;</td>
+          <td class="paramname"><em>pName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wypelnia strukture ldirect trasami a punktu A do B na podstawie wartosci vertex i pvertex z tablicy pathtab. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>- wskaznik na tablice pathtab </td></tr>
+    <tr><td class="paramname">cityA</td><td>- nazwa miasta A </td></tr>
+    <tr><td class="paramname">cityB</td><td>- nazwa miasta B </td></tr>
+    <tr><td class="paramname">pName</td><td>- wskaznik na strukture mapy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>pVisited - struktura zawierajaca intersujaca nas droge z A do B </dd>
+<dd>
+nullptr - w wypadku niepowodzenia/przerwania petli </dd></dl>
+<dl class="exception"><dt>Wyjątki</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">noroute</td><td>- gdy funkcja otrzyma sygnal, ze droga nie istnieje </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a402a1a8e01638b441e89c851620eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a402a1a8e01638b441e89c851620eba">&#9670;&nbsp;</a></span>weightless()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void weightless </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structldirect.html">ldirect</a> *&amp;&#160;</td>
+          <td class="paramname"><em>route</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>endcity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramname"><em>startcity</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja przywroci dystanse z |X-Y| usuwajac odleglosc |A-X|, powstale w wyniku algorytmu Dijkstry. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">route</td><td>- wskaznik na strukture trasy z A do B </td></tr>
+    <tr><td class="paramname">endcity</td><td>- nazwa miasta koncowego </td></tr>
+    <tr><td class="paramname">startcity</td><td>- wskaznik na miasto poczatkowe </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a1b4dc9179dbf59355efce07448be105d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4dc9179dbf59355efce07448be105d">&#9670;&nbsp;</a></span>writeroute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeroute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structldirect.html">ldirect</a> *&amp;&#160;</td>
+          <td class="paramname"><em>route</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wypisuje do zadanego strumienia droge z A do B. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">route</td><td>- wskaznik na strukture trasy </td></tr>
+    <tr><td class="paramname">stream</td><td>- strumien wyjsciowy do zapisu </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

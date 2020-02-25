@@ -1,0 +1,16 @@
+
+\begin{DoxyRefList}
+\item[\label{todo__todo000004}%
+\Hypertarget{todo__todo000004}%
+Składowa \mbox{\hyperlink{_service_8h_a7d8249df16f85a510eff3384f41abf9d}{core}} (lcities $\ast$\&p\+Name, pathtab $\ast$\&path, ldirect $\ast$\&route, ostream \&outfile, istream \&rfile)]KS\+:Nazwa funkcji nic nie mowi! W zyciu bym nie przypuscil, ze funkcja o nazwie ,,core" odczytuje wartosci parametrow programu. 
+
+TS\+:Nie mam zadnego pomyslu jak nazwac te funkcje, bo stanowi trzon algortymu... do przemyslenia na potem  
+\item[\label{todo__todo000002}%
+\Hypertarget{todo__todo000002}%
+Składowa \mbox{\hyperlink{_service_8h_acdae817f32d56995307d1fe131fdc94f}{doparameters}} (int paramixmax, char $\ast$params\mbox{[}\mbox{]}, string \&mfpath, string \&ofpath, string \&rfpath, bool \&wasrf, bool \&wasof)]KS\+: Istotne jest, ze parametry mfpath, ofpath sa wyjsciowe, trzeba to zaznaczyc w komentarzu piszac\+:
+
+TS\+: Hmm co to dokladnie znaczy ze sa wyjsciowe?, w sensie ze do plikow czy ym, cos innego?  
+\item[\label{todo__todo000001}%
+\Hypertarget{todo__todo000001}%
+Składowa \mbox{\hyperlink{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}{main}} (int paramixmax, char $\ast$params\mbox{[}\mbox{]})]KS\+: O tym, ze funkcja zglasza wyjatek bedziemy pisac wtedy, gdy wyjatek nie jest obslugiwany w tej funkcji. (TS\+: i nie jest, tzn nie kazdy) Wtedy korzystajac z niej, musze wiedziec o tym, bo musza obsluzyc wyjatek na zewnatrz funkcji. Jezeli wyjatek jest zglaszany i obslugiwany w funkcji, to nie bedziemy o tym pisac, bo uzytkownik nawet nie spostrzeze, ze jest zglaszany wyjatek. 
+\end{DoxyRefList}

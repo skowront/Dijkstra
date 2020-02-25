@@ -1,0 +1,243 @@
+\hypertarget{_service_8h}{}\section{Dokumentacja pliku Service.\+h}
+\label{_service_8h}\index{Service.\+h@{Service.\+h}}
+
+
+Zawiera funkcje dla \mbox{\hyperlink{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}{main()}}, do obslugi wprowadzanych danych, czy to w postaci argumentow linii polecen, czy danych bezposrednio z pliku.  
+
+
+{\ttfamily \#include \char`\"{}Mapheader.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\subsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_service_8h_ae11683d4f44426c27f006bdb1e7db95f}{printhelp}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja wypisuje na ekranie okno pomocy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_service_8h_ae47b8ee9b22331b0b34ea1399359bcb2}{correctparams}} (const string \&ifpath, const string \&ofpath, const string \&rfpath)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza poprawnosc parametrow. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_service_8h_acdae817f32d56995307d1fe131fdc94f}{doparameters}} (int paramixmax, char $\ast$params\mbox{[}$\,$\mbox{]}, string \&mfpath, string \&ofpath, string \&rfpath, bool \&wasrf, bool \&wasof)
+\begin{DoxyCompactList}\small\item\em Funkcja obsluguje podane argumenty z linii polecen, ustawia podane parametry na stan adekwatny do sytuacji. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_service_8h_a871ced8e51ccdaeb281f0ceb38fc693e}{noroad}} (ostream \&outfile, const string \&cityA, const string cityB)
+\begin{DoxyCompactList}\small\item\em Funkcja zaisuje do podanego strumienia wyjsciowego informacje o nieistniejacej drodze z A do B. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_service_8h_a7d8249df16f85a510eff3384f41abf9d}{core}} (\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&p\+Name, \mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&path, \mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&route, ostream \&outfile, istream \&rfile)
+\begin{DoxyCompactList}\small\item\em Funkcja obsluguje podane argumenty z linii polecen, ustawia podane parametry na stan adekwatny do sytuacji. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{_service_8h_a7d130e3a200c6077ee810adc4f12bac1}{allexcep}} (\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}{errorid}} excep)
+\begin{DoxyCompactList}\small\item\em Funkcja obsluguje wszystkie wyjatki ktore moga wystapic w programie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{_service_8h_aedac38fb8acb693e5267bce7e41bf85b}{mainexception}} (\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}{errorid}} excep, bool \&wasrf, bool \&wasof)
+\begin{DoxyCompactList}\small\item\em Funkcja obsluguje tylko czesc wyjatkow specjalnie dla funkcji main. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Zawiera funkcje dla \mbox{\hyperlink{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}{main()}}, do obslugi wprowadzanych danych, czy to w postaci argumentow linii polecen, czy danych bezposrednio z pliku. 
+
+\begin{DoxyAuthor}{Autor}
+Tomasz Skowron 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{_service_8cpp}{Service.\+cpp}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_service_8h_a7d130e3a200c6077ee810adc4f12bac1}\label{_service_8h_a7d130e3a200c6077ee810adc4f12bac1}} 
+\index{Service.\+h@{Service.\+h}!allexcep@{allexcep}}
+\index{allexcep@{allexcep}!Service.\+h@{Service.\+h}}
+\subsubsection{\texorpdfstring{allexcep()}{allexcep()}}
+{\footnotesize\ttfamily string allexcep (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}{errorid}}}]{excep }\end{DoxyParamCaption})}
+
+
+
+Funkcja obsluguje wszystkie wyjatki ktore moga wystapic w programie. 
+
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}{errorid}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parametry}
+{\em excep} & -\/ wyjatek (na podstawie wyliczenia errorid) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ \char`\"{}nieznany  blad \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}blad pliku wejsciowego z mapa \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}inny dystans miedzy miastami zostal juz podany \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}droga nie istnieje \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}znaleziono trase\char`\"{} 
+
+-\/ \char`\"{}blad w linii w pliku z polaczeniami miedzy miastami \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}nie podano pliku z drogami \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}nie podano pliku z trasami do wyznaczenia \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}nie podano pliku wyjsciowego \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}blad pliku wyjsciowego \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}blad pliku z drogami do wyznaczenia \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}nie podano pliku z trasami, ani wyjsciowego \textbackslash{}n\char`\"{} 
+
+-\/ \char`\"{}\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_service_8h_a7d8249df16f85a510eff3384f41abf9d}\label{_service_8h_a7d8249df16f85a510eff3384f41abf9d}} 
+\index{Service.\+h@{Service.\+h}!core@{core}}
+\index{core@{core}!Service.\+h@{Service.\+h}}
+\subsubsection{\texorpdfstring{core()}{core()}}
+{\footnotesize\ttfamily void core (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlcities}{lcities}} $\ast$\&}]{p\+Name,  }\item[{\mbox{\hyperlink{structpathtab}{pathtab}} $\ast$\&}]{path,  }\item[{\mbox{\hyperlink{structldirect}{ldirect}} $\ast$\&}]{route,  }\item[{ostream \&}]{outfile,  }\item[{istream \&}]{rfile }\end{DoxyParamCaption})}
+
+
+
+Funkcja obsluguje podane argumenty z linii polecen, ustawia podane parametry na stan adekwatny do sytuacji. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em p\+Name} & -\/ wskaznik na strukture mapy \\
+\hline
+{\em path} & -\/ wskaznik na strukture pathtab \\
+\hline
+{\em route} & -\/ wskaznik na strukture ldirect, droge z A do B \\
+\hline
+{\em outfile} & -\/ strumien wyjsciowy \\
+\hline
+{\em rfile} & -\/ strumien wejsciowy z ktorego czytane sa poszukiwane trasy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_service_8h_ae47b8ee9b22331b0b34ea1399359bcb2}\label{_service_8h_ae47b8ee9b22331b0b34ea1399359bcb2}} 
+\index{Service.\+h@{Service.\+h}!correctparams@{correctparams}}
+\index{correctparams@{correctparams}!Service.\+h@{Service.\+h}}
+\subsubsection{\texorpdfstring{correctparams()}{correctparams()}}
+{\footnotesize\ttfamily bool correctparams (\begin{DoxyParamCaption}\item[{const string \&}]{ifpath,  }\item[{const string \&}]{ofpath,  }\item[{const string \&}]{rfpath }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdza poprawnosc parametrow. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em ifpath} & -\/ sciezka do pliku wejsciowego \\
+\hline
+{\em ofpath} & -\/ sciezka do pliku wyjsciowego \\
+\hline
+{\em rfpath} & -\/ sciezka do pliku z trasami \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+true -\/ zawsze true, o ile wczesniej nie bylo bledu krytycznego (brak pliku mapy, niepoprawnie otwarty/nie otwarty plik) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Wyjątki}
+{\em nominusd} & gdy nie ma pliku z mapa \\
+\hline
+{\em no\+TnoO} & gdy nie ma ani pliku z trasami do wyznaczenia, ani pliku wyjsciowego \\
+\hline
+{\em nominuso} & gdy nie ma pliku wyjsciowego \\
+\hline
+{\em nominust} & gdy nie ma pliku z trasami do wyznaczenia \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{_service_8h_acdae817f32d56995307d1fe131fdc94f}\label{_service_8h_acdae817f32d56995307d1fe131fdc94f}} 
+\index{Service.\+h@{Service.\+h}!doparameters@{doparameters}}
+\index{doparameters@{doparameters}!Service.\+h@{Service.\+h}}
+\subsubsection{\texorpdfstring{doparameters()}{doparameters()}}
+{\footnotesize\ttfamily void doparameters (\begin{DoxyParamCaption}\item[{int}]{paramixmax,  }\item[{char $\ast$}]{params\mbox{[}$\,$\mbox{]},  }\item[{string \&}]{mfpath,  }\item[{string \&}]{ofpath,  }\item[{string \&}]{rfpath,  }\item[{bool \&}]{wasrf,  }\item[{bool \&}]{wasof }\end{DoxyParamCaption})}
+
+
+
+Funkcja obsluguje podane argumenty z linii polecen, ustawia podane parametry na stan adekwatny do sytuacji. 
+
+
+\begin{DoxyParams}[1]{Parametry}
+ & {\em paramixmax} & -\/zmienna z iloscia parametrow \\
+\hline
+ & {\em params} & -\/ tablica parametrow \\
+\hline
+\mbox{\tt out}  & {\em mfpath} & -\/ sciezka do pliku z mapa \\
+\hline
+\mbox{\tt out}  & {\em ofpath} & -\/ sciezka do pliku wyjsciowego \\
+\hline
+ & {\em rfpath} & -\/ sciezka do pliku z trasami do wyznaczenia \\
+\hline
+ & {\em wasrf} & -\/ (nie)byl plik z trasami \\
+\hline
+ & {\em wasof} & -\/ (nie)byl plik wyjsciowy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_service_8h_aedac38fb8acb693e5267bce7e41bf85b}\label{_service_8h_aedac38fb8acb693e5267bce7e41bf85b}} 
+\index{Service.\+h@{Service.\+h}!mainexception@{mainexception}}
+\index{mainexception@{mainexception}!Service.\+h@{Service.\+h}}
+\subsubsection{\texorpdfstring{mainexception()}{mainexception()}}
+{\footnotesize\ttfamily string mainexception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_mapheader_8h_a21d3970e295e6af7a3a4cec2869cae2b}{errorid}}}]{excep,  }\item[{bool \&}]{wasrf,  }\item[{bool \&}]{wasof }\end{DoxyParamCaption})}
+
+
+
+Funkcja obsluguje tylko czesc wyjatkow specjalnie dla funkcji main. 
+
+Funkcja moze zmienic wasrf lub/i wasof na podstawie braku podania ktoregos z parametrow do main.
+
+Obslugiwane wyjatki\+: no\+TnoO, nominust, nominuso 
+\begin{DoxyParams}{Parametry}
+{\em excep} & -\/ wyjatek (na podstawie wyliczenia errorid) \\
+\hline
+{\em wasrf} & -\/ czy byl plik z trasami \\
+\hline
+{\em wasof} & -\/ czy byl plik wyjsciowy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+-\/ \char`\"{}nie podano pliku z trasami ani wyjsciowego\char`\"{} 
+
+-\/ \char`\"{}nie podano pliku z trasami do wyznaczenia\char`\"{} 
+
+-\/ \char`\"{}nie podano pliku wyjsciowego \char`\"{} 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Zobacz również}
+\mbox{\hyperlink{_mapa_8cpp_ac0a7634bf3f7b6b71ec101f221a37a9a}{main}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{_service_8h_a871ced8e51ccdaeb281f0ceb38fc693e}\label{_service_8h_a871ced8e51ccdaeb281f0ceb38fc693e}} 
+\index{Service.\+h@{Service.\+h}!noroad@{noroad}}
+\index{noroad@{noroad}!Service.\+h@{Service.\+h}}
+\subsubsection{\texorpdfstring{noroad()}{noroad()}}
+{\footnotesize\ttfamily void noroad (\begin{DoxyParamCaption}\item[{ostream \&}]{outfile,  }\item[{const string \&}]{cityA,  }\item[{const string}]{cityB }\end{DoxyParamCaption})}
+
+
+
+Funkcja zaisuje do podanego strumienia wyjsciowego informacje o nieistniejacej drodze z A do B. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em outfile} & -\/ strumien wyjsciowy \\
+\hline
+{\em cityA} & -\/ miasto poczatkowe a miasta A \\
+\hline
+{\em cityB} & -\/ nazwa miasta B \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_service_8h_ae11683d4f44426c27f006bdb1e7db95f}\label{_service_8h_ae11683d4f44426c27f006bdb1e7db95f}} 
+\index{Service.\+h@{Service.\+h}!printhelp@{printhelp}}
+\index{printhelp@{printhelp}!Service.\+h@{Service.\+h}}
+\subsubsection{\texorpdfstring{printhelp()}{printhelp()}}
+{\footnotesize\ttfamily void printhelp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisuje na ekranie okno pomocy. 
+
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}

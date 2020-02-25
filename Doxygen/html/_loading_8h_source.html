@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mapa: Plik źródłowy Loading.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Mapa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4c8cf85762cb1998d0c18f88ec599217.html">projekt-02</a></li><li class="navelem"><a class="el" href="dir_08c86b01266eff09fc34d82bace979b5.html">Mapa</a></li><li class="navelem"><a class="el" href="dir_bb1f29e49c897877093dbdc54e3da301.html">Mapav1</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Loading.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_loading_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef Loading_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define Loading_H </span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_mapheader_8h.html">Mapheader.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="structexistindex.html">existindex</a> <a class="code" href="_loading_8h.html#aff8901c9db5268281427c926821ff150">existroad</a>(<a class="code" href="structlcities.html">lcities</a> *&amp; pName, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp; cityA, <span class="keywordtype">double</span> distance, <span class="keyword">const</span>  <span class="keywordtype">string</span> &amp; cityB);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_loading_8h.html#a84909d1116494d004bf82e6ae22815e6">addcity</a>(<a class="code" href="structlcities.html">lcities</a> *&amp;pName, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;cityA);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_loading_8h.html#a74a1efc8db71a7770b302ace70766cea">addroad</a>(<a class="code" href="structlcities.html">lcities</a> *&amp;pName, <span class="keywordtype">double</span> dist, <a class="code" href="structexistindex.html">existindex</a> &amp; cityloc);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_loading_8h.html#a896eb1f49c1cd134dcc571ed4ead25a1">loadroad</a>(<a class="code" href="structlcities.html">lcities</a>*&amp; pName, <span class="keyword">const</span> <span class="keywordtype">string</span> &amp;infilename);</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="_mapheader_8h_html"><div class="ttname"><a href="_mapheader_8h.html">Mapheader.h</a></div></div>
+<div class="ttc" id="_loading_8h_html_a896eb1f49c1cd134dcc571ed4ead25a1"><div class="ttname"><a href="_loading_8h.html#a896eb1f49c1cd134dcc571ed4ead25a1">loadroad</a></div><div class="ttdeci">void loadroad(lcities *&amp;pName, const string &amp;infilename)</div><div class="ttdoc">Funkcja jest medium do tworzenia struktury mapy. Funkcja pobiera linie z pliku i sprawdzajac ich popr...</div><div class="ttdef"><b>Definition:</b> Loading.cpp:116</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="_loading_8h_html_aff8901c9db5268281427c926821ff150"><div class="ttname"><a href="_loading_8h.html#aff8901c9db5268281427c926821ff150">existroad</a></div><div class="ttdeci">existindex existroad(lcities *&amp;pName, const string &amp;cityA, double distance, const string &amp;cityB)</div><div class="ttdoc">Funkcja odnajduje miasta i zwraca strukture existindex ze wskaznikami na szukane elementy o ile istni...</div><div class="ttdef"><b>Definition:</b> Loading.cpp:14</div></div>
+<div class="ttc" id="_loading_8h_html_a84909d1116494d004bf82e6ae22815e6"><div class="ttname"><a href="_loading_8h.html#a84909d1116494d004bf82e6ae22815e6">addcity</a></div><div class="ttdeci">void addcity(lcities *&amp;pName, const string &amp;cityA)</div><div class="ttdoc">Funkcja dodaje nowe miasto do struktury mapy, tzn lcities. </div><div class="ttdef"><b>Definition:</b> Loading.cpp:75</div></div>
+<div class="ttc" id="_loading_8h_html_a74a1efc8db71a7770b302ace70766cea"><div class="ttname"><a href="_loading_8h.html#a74a1efc8db71a7770b302ace70766cea">addroad</a></div><div class="ttdeci">void addroad(lcities *&amp;pName, double dist, existindex &amp;cityloc)</div><div class="ttdoc">Funkcja dodaje droge, tzn dystans miedzy miastami A B. Funkcja wymaga podania struktury existindex by...</div><div class="ttdef"><b>Definition:</b> Loading.cpp:97</div></div>
+<div class="ttc" id="structexistindex_html"><div class="ttname"><a href="structexistindex.html">existindex</a></div><div class="ttdoc">Struktura dla funkcji existroad, z informacjami o (nie)istnieniu miast oraz wskaznikach na nie...</div><div class="ttdef"><b>Definition:</b> Mapheader.h:56</div></div>
+<div class="ttc" id="structlcities_html"><div class="ttname"><a href="structlcities.html">lcities</a></div><div class="ttdoc">Struktura mapy zlozonej z drog jednokierunkowych. lcities to lista list. Struktura reprezentuje miast...</div><div class="ttdef"><b>Definition:</b> Mapheader.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

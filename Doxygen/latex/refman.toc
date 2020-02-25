@@ -1,0 +1,137 @@
+\contentsline {chapter}{\numberline {1}Indeks klas}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Lista klas}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Indeks plik\IeC {\'o}w}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lista plik\IeC {\'o}w}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Dokumentacja klas}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Dokumentacja struktury existindex}{5}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{5}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}correctdist}{5}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}existA}{6}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}existB}{6}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.4}locationptrA}{6}{subsubsection.3.1.2.4}
+\contentsline {subsubsection}{\numberline {3.1.2.5}locationptrB}{6}{subsubsection.3.1.2.5}
+\contentsline {section}{\numberline {3.2}Dokumentacja struktury lcities}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{7}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{7}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}city}{7}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}p\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}City}{7}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}p\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dist}{7}{subsubsection.3.2.2.3}
+\contentsline {section}{\numberline {3.3}Dokumentacja struktury ldirect}{7}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{8}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{8}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}lv\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Next}{8}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}vertex}{8}{subsubsection.3.3.2.2}
+\contentsline {section}{\numberline {3.4}Dokumentacja struktury lcities\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}:ldist}{8}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{8}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{9}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}dist}{9}{subsubsection.3.4.2.1}
+\contentsline {subsubsection}{\numberline {3.4.2.2}p\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}City}{9}{subsubsection.3.4.2.2}
+\contentsline {subsubsection}{\numberline {3.4.2.3}p\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Next\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Dist}{9}{subsubsection.3.4.2.3}
+\contentsline {section}{\numberline {3.5}Dokumentacja struktury pathtab}{9}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{9}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{10}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}nextpathtab}{10}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}pvertex}{10}{subsubsection.3.5.2.2}
+\contentsline {subsubsection}{\numberline {3.5.2.3}sdist}{10}{subsubsection.3.5.2.3}
+\contentsline {subsubsection}{\numberline {3.5.2.4}vertex}{10}{subsubsection.3.5.2.4}
+\contentsline {subsubsection}{\numberline {3.5.2.5}visited}{10}{subsubsection.3.5.2.5}
+\contentsline {chapter}{\numberline {4}Dokumentacja plik\IeC {\'o}w}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Dokumentacja pliku Cleanse.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{11}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Dokumentacja funkcji}{12}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}clean()}{12}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}cleanpath()}{12}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}cleanroute()}{12}{subsubsection.4.1.2.3}
+\contentsline {subsubsection}{\numberline {4.1.2.4}complexclean()}{13}{subsubsection.4.1.2.4}
+\contentsline {section}{\numberline {4.2}Dokumentacja pliku Cleanse.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{13}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{14}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Dokumentacja funkcji}{14}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}clean()}{14}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}cleanpath()}{14}{subsubsection.4.2.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.3}cleanroute()}{15}{subsubsection.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4.2.2.4}complexclean()}{15}{subsubsection.4.2.2.4}
+\contentsline {section}{\numberline {4.3}Dokumentacja pliku Loading.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{16}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{16}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Dokumentacja funkcji}{17}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}addcity()}{17}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}addroad()}{17}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}existroad()}{18}{subsubsection.4.3.2.3}
+\contentsline {subsubsection}{\numberline {4.3.2.4}loadroad()}{18}{subsubsection.4.3.2.4}
+\contentsline {section}{\numberline {4.4}Dokumentacja pliku Loading.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{19}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{19}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Dokumentacja funkcji}{20}{subsection.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.2.1}addcity()}{20}{subsubsection.4.4.2.1}
+\contentsline {subsubsection}{\numberline {4.4.2.2}addroad()}{20}{subsubsection.4.4.2.2}
+\contentsline {subsubsection}{\numberline {4.4.2.3}existroad()}{21}{subsubsection.4.4.2.3}
+\contentsline {subsubsection}{\numberline {4.4.2.4}loadroad()}{21}{subsubsection.4.4.2.4}
+\contentsline {section}{\numberline {4.5}Dokumentacja pliku Mapa.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{22}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{22}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Dokumentacja funkcji}{22}{subsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2.1}main()}{23}{subsubsection.4.5.2.1}
+\contentsline {section}{\numberline {4.6}Dokumentacja pliku Mapheader.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{23}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Dokumentacja typ\IeC {\'o}w wyliczanych}{24}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}errorid}{24}{subsubsection.4.6.1.1}
+\contentsline {section}{\numberline {4.7}Dokumentacja pliku pathfinding.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{24}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{25}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Dokumentacja funkcji}{26}{subsection.4.7.2}
+\contentsline {subsubsection}{\numberline {4.7.2.1}allroadexist()}{26}{subsubsection.4.7.2.1}
+\contentsline {subsubsection}{\numberline {4.7.2.2}allvisited()}{26}{subsubsection.4.7.2.2}
+\contentsline {subsubsection}{\numberline {4.7.2.3}existroad\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ato\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}B()}{27}{subsubsection.4.7.2.3}
+\contentsline {subsubsection}{\numberline {4.7.2.4}exist\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}V()}{27}{subsubsection.4.7.2.4}
+\contentsline {subsubsection}{\numberline {4.7.2.5}findiname()}{28}{subsubsection.4.7.2.5}
+\contentsline {subsubsection}{\numberline {4.7.2.6}findinpath()}{28}{subsubsection.4.7.2.6}
+\contentsline {subsubsection}{\numberline {4.7.2.7}findinvisited()}{29}{subsubsection.4.7.2.7}
+\contentsline {subsubsection}{\numberline {4.7.2.8}findmin()}{29}{subsubsection.4.7.2.8}
+\contentsline {subsubsection}{\numberline {4.7.2.9}findshort\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}B()}{30}{subsubsection.4.7.2.9}
+\contentsline {subsubsection}{\numberline {4.7.2.10}getweight()}{31}{subsubsection.4.7.2.10}
+\contentsline {subsubsection}{\numberline {4.7.2.11}initialize()}{31}{subsubsection.4.7.2.11}
+\contentsline {subsubsection}{\numberline {4.7.2.12}interpret()}{32}{subsubsection.4.7.2.12}
+\contentsline {subsubsection}{\numberline {4.7.2.13}weightless()}{32}{subsubsection.4.7.2.13}
+\contentsline {subsubsection}{\numberline {4.7.2.14}writeroute()}{33}{subsubsection.4.7.2.14}
+\contentsline {section}{\numberline {4.8}Dokumentacja pliku pathfinding.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{33}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{34}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}Dokumentacja funkcji}{34}{subsection.4.8.2}
+\contentsline {subsubsection}{\numberline {4.8.2.1}allroadexist()}{34}{subsubsection.4.8.2.1}
+\contentsline {subsubsection}{\numberline {4.8.2.2}allvisited()}{35}{subsubsection.4.8.2.2}
+\contentsline {subsubsection}{\numberline {4.8.2.3}existroad\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}Ato\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}B()}{35}{subsubsection.4.8.2.3}
+\contentsline {subsubsection}{\numberline {4.8.2.4}exist\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}V()}{36}{subsubsection.4.8.2.4}
+\contentsline {subsubsection}{\numberline {4.8.2.5}findiname()}{36}{subsubsection.4.8.2.5}
+\contentsline {subsubsection}{\numberline {4.8.2.6}findinpath()}{37}{subsubsection.4.8.2.6}
+\contentsline {subsubsection}{\numberline {4.8.2.7}findinvisited()}{37}{subsubsection.4.8.2.7}
+\contentsline {subsubsection}{\numberline {4.8.2.8}findmin()}{38}{subsubsection.4.8.2.8}
+\contentsline {subsubsection}{\numberline {4.8.2.9}findshort\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}A\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}B()}{39}{subsubsection.4.8.2.9}
+\contentsline {subsubsection}{\numberline {4.8.2.10}getweight()}{39}{subsubsection.4.8.2.10}
+\contentsline {subsubsection}{\numberline {4.8.2.11}initialize()}{40}{subsubsection.4.8.2.11}
+\contentsline {subsubsection}{\numberline {4.8.2.12}interpret()}{40}{subsubsection.4.8.2.12}
+\contentsline {subsubsection}{\numberline {4.8.2.13}weightless()}{41}{subsubsection.4.8.2.13}
+\contentsline {subsubsection}{\numberline {4.8.2.14}writeroute()}{41}{subsubsection.4.8.2.14}
+\contentsline {section}{\numberline {4.9}Dokumentacja pliku Service.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{42}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{42}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}Dokumentacja funkcji}{43}{subsection.4.9.2}
+\contentsline {subsubsection}{\numberline {4.9.2.1}allexcep()}{43}{subsubsection.4.9.2.1}
+\contentsline {subsubsection}{\numberline {4.9.2.2}core()}{43}{subsubsection.4.9.2.2}
+\contentsline {subsubsection}{\numberline {4.9.2.3}correctparams()}{44}{subsubsection.4.9.2.3}
+\contentsline {subsubsection}{\numberline {4.9.2.4}doparameters()}{44}{subsubsection.4.9.2.4}
+\contentsline {subsubsection}{\numberline {4.9.2.5}mainexception()}{45}{subsubsection.4.9.2.5}
+\contentsline {subsubsection}{\numberline {4.9.2.6}noroad()}{46}{subsubsection.4.9.2.6}
+\contentsline {subsubsection}{\numberline {4.9.2.7}printhelp()}{46}{subsubsection.4.9.2.7}
+\contentsline {section}{\numberline {4.10}Dokumentacja pliku Service.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{46}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{47}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}Dokumentacja funkcji}{47}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}allexcep()}{47}{subsubsection.4.10.2.1}
+\contentsline {subsubsection}{\numberline {4.10.2.2}core()}{48}{subsubsection.4.10.2.2}
+\contentsline {subsubsection}{\numberline {4.10.2.3}correctparams()}{48}{subsubsection.4.10.2.3}
+\contentsline {subsubsection}{\numberline {4.10.2.4}doparameters()}{49}{subsubsection.4.10.2.4}
+\contentsline {subsubsection}{\numberline {4.10.2.5}mainexception()}{50}{subsubsection.4.10.2.5}
+\contentsline {subsubsection}{\numberline {4.10.2.6}noroad()}{50}{subsubsection.4.10.2.6}
+\contentsline {subsubsection}{\numberline {4.10.2.7}printhelp()}{51}{subsubsection.4.10.2.7}
+\contentsline {section}{\numberline {4.11}Dokumentacja pliku Valid.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}cpp}{51}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{51}{subsection.4.11.1}
+\contentsline {subsection}{\numberline {4.11.2}Dokumentacja funkcji}{51}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}charonly()}{51}{subsubsection.4.11.2.1}
+\contentsline {section}{\numberline {4.12}Dokumentacja pliku Valid.\discretionary {\unhbox \voidb@x \hbox {\relax \fontsize {7}{8}\selectfont $\leftarrow \joinrel \rhook $}}{}{}h}{52}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{52}{subsection.4.12.1}
+\contentsline {subsection}{\numberline {4.12.2}Dokumentacja funkcji}{52}{subsection.4.12.2}
+\contentsline {subsubsection}{\numberline {4.12.2.1}charonly()}{52}{subsubsection.4.12.2.1}
+\contentsline {chapter}{Indeks}{55}{section*.21}

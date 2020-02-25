@@ -1,0 +1,71 @@
+\hypertarget{structexistindex}{}\section{Dokumentacja struktury existindex}
+\label{structexistindex}\index{existindex@{existindex}}
+
+
+Struktura dla funkcji existroad, z informacjami o (nie)istnieniu miast oraz wskaznikach na nie. Struktura jest uzupelniana funkcja existroad, by stanowic podstawy do uzupelniania listy przy ladowaniu miast lub nie.  
+
+
+
+
+{\ttfamily \#include $<$Mapheader.\+h$>$}
+
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structexistindex_a0638291657c5a0cd38cc979e66bd58da}{existA}}
+\item 
+bool \mbox{\hyperlink{structexistindex_ab2d8d4d0afa56f1f1e131423674bbbf1}{existB}}
+\item 
+int \mbox{\hyperlink{structexistindex_ae41cd59f04d4c9fc234aa14ce1bed3f5}{correctdist}}
+\item 
+\mbox{\hyperlink{structlcities}{lcities}} $\ast$ \mbox{\hyperlink{structexistindex_a78aac5475c8f83ee75289143aefa3d38}{locationptrA}} = nullptr
+\item 
+\mbox{\hyperlink{structlcities}{lcities}} $\ast$ \mbox{\hyperlink{structexistindex_a2ce546bc2977c9c9e11eedf030fc8bd2}{locationptrB}} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Struktura dla funkcji existroad, z informacjami o (nie)istnieniu miast oraz wskaznikach na nie. Struktura jest uzupelniana funkcja existroad, by stanowic podstawy do uzupelniania listy przy ladowaniu miast lub nie. 
+
+\subsection{Dokumentacja atrybutów składowych}
+\mbox{\Hypertarget{structexistindex_ae41cd59f04d4c9fc234aa14ce1bed3f5}\label{structexistindex_ae41cd59f04d4c9fc234aa14ce1bed3f5}} 
+\index{existindex@{existindex}!correctdist@{correctdist}}
+\index{correctdist@{correctdist}!existindex@{existindex}}
+\subsubsection{\texorpdfstring{correctdist}{correctdist}}
+{\footnotesize\ttfamily int existindex\+::correctdist}
+
+Czy dystans miedzy miastami A i B jest poprawny \begin{DoxyWarning}{Ostrzeżenie}
+Wartosc tego elementu jest scisle okreslona. ~\newline
+ \char`\"{}0\char`\"{} -\/ jesli taki dystans nie istnieje ~\newline
+ \char`\"{}1\char`\"{} -\/ jesli dystans podany z pliku jest taki jak juz byl podany wczesniej ~\newline
+ \char`\"{}2\char`\"{} -\/ jesli wczesniej podano inny dystans z A do B 
+\end{DoxyWarning}
+\mbox{\Hypertarget{structexistindex_a0638291657c5a0cd38cc979e66bd58da}\label{structexistindex_a0638291657c5a0cd38cc979e66bd58da}} 
+\index{existindex@{existindex}!existA@{existA}}
+\index{existA@{existA}!existindex@{existindex}}
+\subsubsection{\texorpdfstring{existA}{existA}}
+{\footnotesize\ttfamily bool existindex\+::existA}
+
+Czy istnieje miasto A \mbox{\Hypertarget{structexistindex_ab2d8d4d0afa56f1f1e131423674bbbf1}\label{structexistindex_ab2d8d4d0afa56f1f1e131423674bbbf1}} 
+\index{existindex@{existindex}!existB@{existB}}
+\index{existB@{existB}!existindex@{existindex}}
+\subsubsection{\texorpdfstring{existB}{existB}}
+{\footnotesize\ttfamily bool existindex\+::existB}
+
+Czy istnieje miasto B \mbox{\Hypertarget{structexistindex_a78aac5475c8f83ee75289143aefa3d38}\label{structexistindex_a78aac5475c8f83ee75289143aefa3d38}} 
+\index{existindex@{existindex}!locationptrA@{locationptrA}}
+\index{locationptrA@{locationptrA}!existindex@{existindex}}
+\subsubsection{\texorpdfstring{locationptrA}{locationptrA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities}{lcities}}$\ast$ existindex\+::locationptrA = nullptr}
+
+nodist=0=nie istnieje, okdist=1=taki sam, wasdiffrentdist=2=byl inny Wskaznik na miasto A jesli istnieje, nullptr jesli nie istnieje \mbox{\Hypertarget{structexistindex_a2ce546bc2977c9c9e11eedf030fc8bd2}\label{structexistindex_a2ce546bc2977c9c9e11eedf030fc8bd2}} 
+\index{existindex@{existindex}!locationptrB@{locationptrB}}
+\index{locationptrB@{locationptrB}!existindex@{existindex}}
+\subsubsection{\texorpdfstring{locationptrB}{locationptrB}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlcities}{lcities}}$\ast$ existindex\+::locationptrB = nullptr}
+
+Wskaznik na miasto B jesli istnieje, nullptr jesli nie istnieje 
+
+Dokumentacja dla tej struktury została wygenerowana z pliku\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_mapheader_8h}{Mapheader.\+h}}\end{DoxyCompactItemize}
